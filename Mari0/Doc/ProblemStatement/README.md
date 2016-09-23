@@ -2,4 +2,5 @@
 
 The folders and files for this folder are as follows:
 
-Describe ...
+-Problem Statement is the file "ProblemStatement.doc"
+	Will be further revised and updated in Latex
