@@ -3,6 +3,7 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{graphicx}
+\usepackage{color}
 \usepackage{float}
 \usepackage[colorlinks=true,urlcolor=blue]{hyperref}
 
@@ -38,9 +39,11 @@
 
 \maketitle
 
+\textcolor{red}{ Include this text in a section named Abstract - CM} \\
 This program is a game that is similar to Mari0 and will be created in Unity. Mari0 is a crossover of Super Mario Bros. and Portal.
 
 \section{Team Meeting Plan}
+\textcolor{red}{Add details regarding roles during meetings, to what extent things are discussed and follow up plans - CM} \\
 Our team will be meeting at the regular lab times to quickly discuss changes as well as upcoming deadlines for the project. Our lab times are Wednesday from 8:30 - 10:20 and Friday 2:30 - 4:20. If there are other times that we need to meet, we will discuss using the Facebook chat to decide on a time where all team members are available. 
 
 \section{Team Communication Plan}
@@ -52,8 +55,10 @@ The communication will mainly happen through a Facebook chat that all team membe
 \textbf{Developer and Documentation Manager:}  Jeff Pineda\\
 
 \section{Git Workflow Plan}
+\textcolor{red}{Include education or workshops needed to reach the experience necessary for feature branch workflow - CM} \\
 Since we all have limited experience with Git, we will be utilizing a centralized workflow in the early stages of the project. However, as we get more comfortable with Git and when the need for multiple people to work on one file at the same time becomes more frequent, we will move to a featured branch workflow.
 \section{Proof of Concept Demonstration Plan}
+\textcolor{red}{Include more specific requirements in last paragraph - CM} \\
 The most difficult part of the implementation of Mari0 will be coding the 'portals' and their mechanics. Two portals can be placed anywhere within line of sight of the main character and on any surface. These two portals are connected, with any projectile or character entering through one portal exits out of the other portal, maintaining their physical properties, such as acceleration and velocity, they had when first entering.
 
 Testing whether or not player inputs lead to correct gameplay/visual outputs will be relatively simple, as this can be handled by writing unit tests. Testing the other aspects of the game such as puzzle difficulty, control feel and responsiveness, and enjoyability of the game will be more difficult. Testing these will need to be done through beta tests and player survey feedback.
@@ -61,6 +66,7 @@ Testing whether or not player inputs lead to correct gameplay/visual outputs wil
 As a proof of concept, we will demonstrate a simple level design, with it being a small area and containing simple walls and platforms, a moveable character and working portal mechanics, to prove that the difficulties can be overcome.
 
 \section{Technology}
+\textcolor{red}{Include details about documentation for your C\# code and look into using a testing framework to aid in assert methods, running synchronously and other helpful methods - CM} \\
 We will be using the Unity game engine to handle game physics and will be writing the rest of the game with C\#.
 The IDE we will be using is MonoDevelop which is a Unity integrated IDE and we will be writing our own unit tests.
 
@@ -77,15 +83,15 @@ We will be using \href{https://msdn.microsoft.com/en-us/library/ff926074.aspx}{M
   \includegraphics[width=30mm,scale = 0.25]{curlyBraces.jpg}
 \end{figure}
 
-  \item All constants will be named in capital letters
+  \item \textcolor{red}{Upper or Lower camel case? - CM} \\ All constants will be named in capital letters
 
   \item Method names will be named in camel case format.
 
 \end{itemize}
 
 \section{Project Schedule}
-
-\href{../../ProjectSchedule/ProjectSchedule.gan}{Click here for the Gantt Chart.}
+\textcolor{red}{Add run for any non-HTTP run protocols. Also, adjust task resources to below 100 percent  - CM} \\
+\href{run:../../ProjectSchedule/ProjectSchedule.gan}{Click here for the Gantt Chart.}
 
 \section{Project Review}
 
