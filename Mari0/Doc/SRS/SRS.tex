@@ -1,0 +1,183 @@
+\documentclass[12pt, titlepage]{article}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=red,
+    urlcolor=blue
+}
+\usepackage[round]{natbib}
+
+\title{SE 3XA3: Development Plan\\Mari0}
+
+\author{Team 9, Ninetendo
+		\\ David Hobson - hobsondd
+		\\ Jose Miguel Ballesteros - ballesjm
+		\\ Jeff Pineda - pinedaj
+}
+
+\date{\today}
+
+\input{../Comments}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+\listoffigures
+
+\begin{table}[bp]
+\caption{\bf Revision History}
+\begin{tabularx}{\textwidth}{p{3cm}p{2cm}X}
+\toprule {\bf Date} & {\bf Version} & {\bf Notes}\\
+\midrule
+October 6, 2016 & 1.0 & Created Document, rough draft of section 1\\
+Date 2 & 1.1 & Notes\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\pagenumbering{arabic}
+
+This document describes the requirements for Mari0  The template for the Software
+Requirements Specification (SRS) is a subset of the Volere
+template~\citep{RobertsonAndRobertson2012}.
+
+\section{Project Drivers}
+
+\subsection{The Purpose of the Project}
+The purpose of this project is to recreate the game, Mari0, to allow the players 
+to entertain themselves and alleviate their boredom. Mari0 is a combination of
+Super Mario Bros. and Portal, challenging a player's platforming abilities and their
+puzzle solving skills.
+
+\subsection{The Stakeholders}
+
+\subsubsection{The Client}
+The client for the Mari0 project is the game publisher.
+
+\subsubsection{The Customers}
+The customers for this project are people interested in platforming and/or puzzle games.
+
+\subsubsection{Other Stakeholders}
+The other stakeholders for Mari0 are the game's developers and designers.
+
+\subsection{Mandated Constraints}
+The constraints as mandated by our client are as follows:
+\begin{itemize}
+	\item Have each deliverable finished by the deadlines given in the course outline
+	\item The game's physics will be handled by the Unity Game engine
+	\item The product should be runnable on all operate systems
+\end{itemize}
+
+\subsection{Naming Conventions and Terminology}
+
+\begin{tabular}{l l}
+\hline
+Term			& Definition \\
+\hline
+A.I.			 & Artificial Intelligence  \\
+Portals      		 & Two connected portals that allow characters and projectiles to \\
+			 & enter one and exit through the other, whilst mainting physial \\
+			 & properties such as velocity and acceleration \\
+Mario      		 & The character that the player portrays  \\
+Goomba		 & Enemy character that is defeated after the player stomps on the top \\
+			 & of its head	  \\
+Lives			 & The amount of times the player can die before game over	\\
+Question Block	 & Blocks found that when hit give the player coins or power ups	\\
+Fire Flower		 & Type of power up, gives Mario the ability to throw fireballs	\\
+Super Mushroom	 & Type of power up, lets Mario take an extra hit from enemies	\\
+Koopa Troopa	 & Enemy character that is defeated after the player stomps on \\
+			 & the top of its head; leaves behind a shell that can be used as a projectile	\\
+\hline
+
+\end{tabular}
+
+\subsection{Relevant Facts and Assumptions}
+
+User characteristics should go under assumptions.
+
+\section{Functional Requirements}
+
+\subsection{The Scope of the Work and the Product}
+
+\subsubsection{The Context of the Work}
+
+\subsubsection{Work Partitioning}
+
+\subsubsection{Individual Product Use Cases}
+
+\subsection{Functional Requirements}
+
+\section{Non-functional Requirements}
+
+\subsection{Look and Feel Requirements}
+
+\subsection{Usability and Humanity Requirements}
+
+\subsection{Performance Requirements}
+
+\subsection{Operational and Environmental Requirements}
+
+\subsection{Maintainability and Support Requirements}
+
+\subsection{Security Requirements}
+
+\subsection{Cultural Requirements}
+
+\subsection{Legal Requirements}
+
+\subsection{Health and Safety Requirements}
+
+This section is not in the original Volere template, but health and safety are
+issues that should be considered for every engineering project.
+
+\section{Project Issues}
+
+\subsection{Open Issues}
+
+\subsection{Off-the-Shelf Solutions}
+
+\subsection{New Problems}
+
+\subsection{Tasks}
+
+\subsection{Migration to the New Product}
+
+\subsection{Risks}
+
+\subsection{Costs}
+
+\subsection{User Documentation and Training}
+
+\subsection{Waiting Room}
+
+\subsection{Ideas for Solutions}
+
+\bibliographystyle{plainnat}
+
+\bibliography{SRS}
+
+\newpage
+
+\section{Appendix}
+
+This section has been added to the Volere template.  This is where you can place
+additional information.
+
+\subsection{Symbolic Parameters}
+
+The definition of the requirements will likely call for SYMBOLIC\_CONSTANTS.
+Their values are defined in this section for easy maintenance.
+
+
+\end{document}
