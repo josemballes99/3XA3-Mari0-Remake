@@ -39,7 +39,8 @@
 \toprule {\bf Date} & {\bf Version} & {\bf Notes}\\
 \midrule
 October 6, 2016 & 1.0 & Created Document, rough draft of section 1\\
-Date 2 & 1.1 & Notes\\
+October 11, 2016 & 1.1 & Added Problem Issues\\
+October 11, 2016 & 1.2 & Finished Project Drivers and Non-Functional Requirements\\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -81,30 +82,33 @@ The constraints as mandated by our client are as follows:
 
 \subsection{Naming Conventions and Terminology}
 
+\begin{table}
+\caption{Terminology and Definition Table}
 \begin{tabular}{l l}
 \hline
 Term			& Definition \\
 \hline
-A.I.			 & Artificial Intelligence  \\
+Mario      		 & The character that the player portrays  \\
 Portals      		 & Two connected portals that allow characters and projectiles to \\
 			 & enter one and exit through the other, whilst mainting physial \\
 			 & properties such as velocity and acceleration \\
-Mario      		 & The character that the player portrays  \\
 Goomba		 & Enemy character that is defeated after the player stomps on the top \\
 			 & of its head	  \\
-Lives			 & The amount of times the player can die before game over	\\
-Question Block	 & Blocks found that when hit give the player coins or power ups	\\
-Fire Flower		 & Type of power up, gives Mario the ability to throw fireballs	\\
-Super Mushroom	 & Type of power up, lets Mario take an extra hit from enemies	\\
 Koopa Troopa	 & Enemy character that is defeated after the player stomps on \\
 			 & the top of its head; leaves behind a shell that can be used as a projectile	\\
+A.I.			 & Artificial Intelligence  \\
+Lives			 & The amount of times the player can die before game over	\\
+Question Block	 & Blocks found that when hit give the player coins or power ups	\\
+Super Mushroom	 & Type of power up, lets Mario take an extra hit from enemies	\\
+Fire Flower		 & Type of power up, gives Mario the ability to throw fireballs	\\
 \hline
-
 \end{tabular}
+\end{table}
 
 \subsection{Relevant Facts and Assumptions}
 
-User characteristics should go under assumptions.
+The users of this game are the players, and despite Mari0 being derived from the games Super Mario Bros. and Portal, the mechanics and game knowledge that come from playing these games is not assumed. \\
+It is also assumed that the user has a computer, a keyboard, and a mouse to play the game.
 
 \section{Functional Requirements}
 
@@ -119,27 +123,64 @@ User characteristics should go under assumptions.
 \subsection{Functional Requirements}
 
 \section{Non-functional Requirements}
+The numbers to the left of each listed requirement indicates requirement number/label.
 
 \subsection{Look and Feel Requirements}
+\begin{enumerate}
+\setcounter{enumi}{10}
+	\item The game will load the two dimensional level the player is currently on. The playable foreground should be composed of Mario, enemies, and a variety of bricks with different attributes that can serve as platforms to jump to and from. The background of the level will change depending on the where the level is located. If the level is outside, the background will consist of a blue sky with a few clouds, small hills, and small bushes. If the level is underground or in a castle, the background will be pure black with no additional aesthetics added.
+	\item The interface displaying the player's number of lives remaining, the current level, coins earned, and the time remaining in a non-obtrusive manner.
+\end{enumerate}
 
 \subsection{Usability and Humanity Requirements}
+\begin{enumerate}
+\setcounter{enumi}{11}
+	\item The game should be easy to learn for all player's, regardless of their experience with the Super Mario Bros., Portal, or other similar games.
+	\item The game should be fun and entertaining.
+\end{enumerate}
 
 \subsection{Performance Requirements}
+\begin{enumerate}
+\setcounter{enumi}{12}
+	\item The game's visuals should respond to all commands inputted by the user without a noticeable delay. This will ensure that the player feels in full control at all times.
+\end{enumerate}
 
 \subsection{Operational and Environmental Requirements}
+\begin{enumerate}
+\setcounter{enumi}{13}
+	\item The game should be able to run on any laptop or desktop computer.
+\end{enumerate}
 
 \subsection{Maintainability and Support Requirements}
+\begin{enumerate}
+\setcounter{enumi}{14}
+	\item The game should be able to execute on Windows, OSX, and Linux based machines.
+\end{enumerate}
 
 \subsection{Security Requirements}
+\begin{enumerate}
+\setcounter{enumi}{15}
+	\item The game should not be able access or alter any information on the user's computer besides updating the player's saved game files.
+\end{enumerate}
 
 \subsection{Cultural Requirements}
+\begin{enumerate}
+\setcounter{enumi}{16}
+	\item The game's written components, such as messages and menu options should be written in English.
+	\item The game should not have any messages, images, or depictions of religious, political, or ethnic significance.
+\end{enumerate}
 
 \subsection{Legal Requirements}
+\begin{enumerate}
+\setcounter{enumi}{17}
+	\item The game should be licensed under the Creative Commons by Non-Commercial Share-Alike 3.0 license. 
+\end{enumerate}
 
 \subsection{Health and Safety Requirements}
-
-This section is not in the original Volere template, but health and safety are
-issues that should be considered for every engineering project.
+\begin{enumerate}
+\setcounter{enumi}{18}
+	\item The game should not have any triggers for epileptic seizures.
+\end{enumerate}
 
 \section{Project Issues}
 
