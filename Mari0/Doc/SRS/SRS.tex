@@ -1,5 +1,6 @@
 \documentclass[12pt, titlepage]{article}
 
+\usepackage[pdftex]{graphicx}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{hyperref}
@@ -115,12 +116,18 @@ It is also assumed that the user has a computer, a keyboard, and a mouse to play
 \subsection{The Scope of the Work and the Product}
 
 \subsubsection{The Context of the Work}
-The game design and interface will be simple and effective. The user will be able to provide input through their computers and will be able to receive the expected response (SEE FIG BELOW). For example, if the user presses the up button and expects to jump, the character on screen will provide a jumping animation for feedback.
+The game design and interface will be simple and effective. The user will be able to provide input through their computers and will be able to receive the expected response, as shown in Figure \ref{fig:context}. For example, if the user presses the up button and expects to jump, the character on screen will provide a jumping animation for feedback.
+\begin{figure}[h] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=3in]{Fig1} 
+   \caption{Context Diagram of the gaming system}
+   \label{fig:context}
+\end{figure}
 
 \subsubsection{Work Partitioning}
 Refer to Table 3.
 \begin{table}
-\caption{Terminology and Definition Table}
+\caption{Work Partitioning}
 \begin{tabular}{lll}
 \hline
 Event Name & Input/Output & Summary\\
@@ -164,68 +171,83 @@ Use Case \#: 1\\Name: Play Game\\Trigger: The user selects to play a new game\
 \\Use Case \#: 2\\Name: Help \\Trigger: The user selects to view help options\\Precondition: The game is in its main menu\\Post Condition: The help menu displays\\
 \\Use Case \#: 3\\Name: Options\\Trigger: The user selects to view options menu\\Precondition: The game is in its main menu\\Post Condition: The options menu is shown\\
 \\Use Case \#: 4\\Name: Character Moves\\Trigger: The user presses a key to move their character in a certain direction\\Precondition: The game is playing\\Post Condition: The character will move in the corresponding direction\\
-\\Use Case \#: 5\\Name: Portal gets fired\\Trigger: The user places the mouse where they?d want a portal and clicks left or right for which portal they want\\Precondition: The game is playing and the portal is in a plausible place\\Post Condition: The portal will get formed\\
+\\Use Case \#: 5\\Name: Portal gets fired\\Trigger: The user places the mouse where they'd want a portal and clicks left or right for which portal they want\\Precondition: The game is playing and the portal is in a plausible place\\Post Condition: The portal will get formed\\
 \\Use Case \#: 6\\Name: Pause\\Trigger: The user presses the pause key\\Precondition: The game is playing\\Post Condition: The pause menu is shown\\
 
 \subsection{Functional Requirements}
-
+\begin{enumerate}
+\item \textbf{The game will have a main menu with multiple options for the user.} \\\underline{\textit{Rationale:}}  The game must feature a place to have all gameplay options organized before a new game begins\\\underline{\textit{Fit criterion:}} Main menu is displayed upon running.\\
+\item \textbf{The game will feature a help menu}.\\\underline{\textit{Rationale:}} The game must have some sort of way of telling the user how to play the game.\\\underline{\textit{Fit criterion:}} Help menu is displayed when selected\\
+\item \textbf{The game will feature an options menu.}\\\underline{\textit{Rationale:}} The game must allow the user to change some gameplay settings\\\underline{\textit{Fit criterion:}} Options menu is displayed when selected\\
+\item \textbf{The user will be able to pause the game.}\\\underline{\textit{Rationale:}} The game must allow the user to pause gameplay so that they can take a break when needed\\\underline{\textit{Fit criterion:}} Gameplay is paused and the pause menu is displayed\\
+\item \textbf{The game will display the character's current state.}\\\underline{\textit{Rationale:}}The user needs a method to track lives and score\\\underline{\textit{Fit criterion:}} The game displays the character's current score, lives, and coins\\
+\item \textbf{The game will feature portal system.}\\\underline{\textit{Rationale:}}The gameplay must feature a method to help the user escape difficult situations\\\underline{\textit{Fit criterion:}} The user is able to select which portal they want and where they'd place it\\
+\item \textbf{The user will be able to move their character.}\\\underline{\textit{Rationale:}} The user must have a way to move their character around the screen\\\underline{\textit{Fit criterion:}} The user is able to move the character to their desired location\\
+\item \textbf{The user will be able to make their character jump.} \\\underline{\textit{Rationale:}}The user must have a method to make their character escape obstacles\\\underline{\textit{Fit criterion:}} The user is able to see their character jump as wanted\\
+\item \textbf{The game will feature powers ups.}\\\underline{\textit{Rationale:}} The game must allow for ways to help the user's character\\\underline{\textit{Fit criterion:}} The user gets benefit from the power up\\
+\item \textbf{The character will be able to collect coin.}\\\underline{\textit{Rationale:}}The user needs ways to increase their character's score\\\underline{\textit{Fit criterion:}} The game will increase score total when the character collects a coin  \\
+\item \textbf{Enemies will defeat the character}\\\underline{\textit{Rationale:}} The game uses this technique to add difficulty to the game\\\underline{\textit{Fit criterion:}} The character will display the defeat animation when hit by an enemy\\
+\item \textbf{Characters will be able to defeat enemies.}\\\underline{\textit{Rationale:}} The game needs a method to defeat enemies\\\underline{\textit{Fit criterion:}} Enemies will be defeated when hit by the character\\
+\item \textbf{The character may fall off the platforms.} \\\underline{\textit{Rationale:}} The user's ability to control their character will add difficulty to the game\\\underline{\textit{Fit criterion:}} Character will be beaten after a fall off screen\\
+\item \textbf{The character will be able to increase their score.} \\\underline{\textit{Rationale:}} The game needs a way to increase score to have different gameplay scenarios\\\underline{\textit{Fit criterion:}} The character can increase score after beating an enemy or collecting a coin\\
 \section{Non-functional Requirements}
 The numbers to the left of each listed requirement indicates requirement number/label.
+\end{enumerate}
 
 \subsection{Look and Feel Requirements}
 \begin{enumerate}
-\setcounter{enumi}{10}
+\setcounter{enumi}{15}
 	\item The game will load the two dimensional level the player is currently on. The playable foreground should be composed of Mario, enemies, and a variety of bricks with different attributes that can serve as platforms to jump to and from. The background of the level will change depending on the where the level is located. If the level is outside, the background will consist of a blue sky with a few clouds, small hills, and small bushes. If the level is underground or in a castle, the background will be pure black with no additional aesthetics added.
 	\item The interface displaying the player's number of lives remaining, the current level, coins earned, and the time remaining in a non-obtrusive manner.
 \end{enumerate}
 
 \subsection{Usability and Humanity Requirements}
 \begin{enumerate}
-\setcounter{enumi}{11}
+\setcounter{enumi}{17}
 	\item The game should be easy to learn for all player's, regardless of their experience with the Super Mario Bros., Portal, or other similar games.
 	\item The game should be fun and entertaining.
 \end{enumerate}
 
 \subsection{Performance Requirements}
 \begin{enumerate}
-\setcounter{enumi}{12}
+\setcounter{enumi}{19}
 	\item The game's visuals should respond to all commands inputted by the user without a noticeable delay. This will ensure that the player feels in full control at all times.
 \end{enumerate}
 
 \subsection{Operational and Environmental Requirements}
 \begin{enumerate}
-\setcounter{enumi}{13}
+\setcounter{enumi}{20}
 	\item The game should be able to run on any laptop or desktop computer.
 \end{enumerate}
 
 \subsection{Maintainability and Support Requirements}
 \begin{enumerate}
-\setcounter{enumi}{14}
+\setcounter{enumi}{21}
 	\item The game should be able to execute on Windows, OSX, and Linux based machines.
 \end{enumerate}
 
 \subsection{Security Requirements}
 \begin{enumerate}
-\setcounter{enumi}{15}
+\setcounter{enumi}{22}
 	\item The game should not be able access or alter any information on the user's computer besides updating the player's saved game files.
 \end{enumerate}
 
 \subsection{Cultural Requirements}
 \begin{enumerate}
-\setcounter{enumi}{16}
+\setcounter{enumi}{23}
 	\item The game's written components, such as messages and menu options should be written in English.
 	\item The game should not have any messages, images, or depictions of religious, political, or ethnic significance.
 \end{enumerate}
 
 \subsection{Legal Requirements}
 \begin{enumerate}
-\setcounter{enumi}{17}
+\setcounter{enumi}{25}
 	\item The game should be licensed under the Creative Commons by Non-Commercial Share-Alike 3.0 license. 
 \end{enumerate}
 
 \subsection{Health and Safety Requirements}
 \begin{enumerate}
-\setcounter{enumi}{18}
+\setcounter{enumi}{26}
 	\item The game should not have any triggers for epileptic seizures.
 \end{enumerate}
 
