@@ -115,10 +115,57 @@ It is also assumed that the user has a computer, a keyboard, and a mouse to play
 \subsection{The Scope of the Work and the Product}
 
 \subsubsection{The Context of the Work}
+The game design and interface will be simple and effective. The user will be able to provide input through their computers and will be able to receive the expected response (SEE FIG BELOW). For example, if the user presses the up button and expects to jump, the character on screen will provide a jumping animation for feedback.
 
 \subsubsection{Work Partitioning}
+Refer to Table 3.
+\begin{table}
+\caption{Terminology and Definition Table}
+\begin{tabular}{lll}
+\hline
+Event Name & Input/Output & Summary\\
+\hline
+Menu Change      	&  Keyboard(in)/Mouse(in)  & When the user selects a menu that they'd\\
+& GameState (Out) & like to visit, the menu will display it   \\
+
+Movement      		&  Keyboard(in)  & When the user presses a key to move\\  
+& GameState (Out) & the character, the character will display \\
+& & its movement animations   \\
+
+Jumping		 &  Keyboard(in)  & When the user presses a key to jump\\  
+& GameState (Out) & the character, the character will display \\
+& & its jumping animations   \\
+
+Portal Shooting	 &  Mouse(in)  & When the user clicks where and which\\  
+& GameState (Out) & portal they'd like to shoot, the game \\
+& & iwill display them accordingly   \\
+
+Enemy Hits Player			 &  GameState(Out)  & When an enemy hits the character the \\  
+& & game will display the defeat animation \\
+& & and the game will reset with one less life   \\
+
+Player Hits Enemy		 &  GameState(Out)  & When the character hits an enemy on the\\  
+& &  right spot, the enemy will disappear \\
+
+Scoring	 &  GameState(Out)  & When the character collects points,  \\  
+& & the game's score display will increase \\
+
+Pause	 &   Keyboard(in) & When the user presses the pause key, \\  
+& GameState(Out)& the game will display the pause menu \\
+\hline
+\end{tabular}
+\end{table}
 
 \subsubsection{Individual Product Use Cases}
+
+Use Case \#: 1\\Name: Play Game\\Trigger: The user selects to play a new game\\Precondition: The game is in its main menu\\Post Condition: The game begins\\
+\\
+\\
+\\Use Case \#: 2\\Name: Help \\Trigger: The user selects to view help options\\Precondition: The game is in its main menu\\Post Condition: The help menu displays\\
+\\Use Case \#: 3\\Name: Options\\Trigger: The user selects to view options menu\\Precondition: The game is in its main menu\\Post Condition: The options menu is shown\\
+\\Use Case \#: 4\\Name: Character Moves\\Trigger: The user presses a key to move their character in a certain direction\\Precondition: The game is playing\\Post Condition: The character will move in the corresponding direction\\
+\\Use Case \#: 5\\Name: Portal gets fired\\Trigger: The user places the mouse where they?d want a portal and clicks left or right for which portal they want\\Precondition: The game is playing and the portal is in a plausible place\\Post Condition: The portal will get formed\\
+\\Use Case \#: 6\\Name: Pause\\Trigger: The user presses the pause key\\Precondition: The game is playing\\Post Condition: The pause menu is shown\\
 
 \subsection{Functional Requirements}
 
