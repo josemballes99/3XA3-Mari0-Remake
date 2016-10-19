@@ -7,7 +7,6 @@ namespace UnityStandardAssets._2D
     {
         [SerializeField] private float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
         [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
-        [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
 
@@ -49,26 +48,12 @@ namespace UnityStandardAssets._2D
         }
 
 
-        public void Move(float move, bool crouch, bool jump)
+        public void Move(float move, bool jump)
         {
-            // If crouching, check to see if the character can stand up
-            if (!crouch && m_Anim.GetBool("Crouch"))
-            {
-                // If the character has a ceiling preventing them from standing up, keep them crouching
-                if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
-                {
-                    crouch = true;
-                }
-            }
-
-            // Set whether or not the character is crouching in the animator
-            m_Anim.SetBool("Crouch", crouch);
 
             //only control the player if grounded or airControl is turned on
             if (m_Grounded || m_AirControl)
             {
-                // Reduce the speed if crouching by the crouchSpeed multiplier
-                move = (crouch ? move*m_CrouchSpeed : move);
 
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
                 m_Anim.SetFloat("Speed", Mathf.Abs(move));
