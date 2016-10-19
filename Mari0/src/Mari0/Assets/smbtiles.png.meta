@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: 2c32ef265e75b634ea13835f10d97e76
 labels:
 - Ground
-timeCreated: 1476473148
+timeCreated: 1476836408
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -31,7 +31,7 @@ TextureImporter:
     21300044: smbtiles_22
     21300046: smbtiles_23
     21300048: smbtiles_24
-    21300050: smbtiles_25
+    21300050: pipeTopLeft
     21300052: smbtiles_26
     21300054: smbtiles_27
     21300056: smbtiles_28
@@ -88,11 +88,14 @@ TextureImporter:
     21300158: smbtiles_79
     21300160: smbtiles_80
     21300162: smbtiles_81
-    21300164: smbtiles_82
+    21300164: pipeBot
     21300166: ground
     21300168: hillTop
     21300170: QuestionBlock
     21300172: smbtiles_1
+    21300174: pipeTopRight
+    21300176: pipeLeft
+    21300178: pipeRight
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -269,11 +272,11 @@ TextureImporter:
         serializedVersion: 2
         x: 221
         y: 84
-        width: 102
+        width: 32
         height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 28, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -472,15 +475,15 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: smbtiles_25
+      name: pipeTopLeft
       rect:
         serializedVersion: 2
-        x: 257
-        y: 69
-        width: 29
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 255
+        y: 86
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.54572713, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -494,7 +497,7 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 9, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -1213,7 +1216,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: smbtiles_82
+      name: pipeBot
       rect:
         serializedVersion: 2
         x: 325
@@ -1271,6 +1274,45 @@ TextureImporter:
         x: 136
         y: 86
         width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pipeTopRight
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 86
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pipeLeft
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 69
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pipeRight
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 69
+        width: 14
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
