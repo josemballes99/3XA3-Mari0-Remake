@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37356424, g: 0.3811201, b: 0.35887662, a: 1}
+  m_IndirectSpecularColor: {r: 0.37356392, g: 0.38112, b: 0.3588766, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -580,6 +580,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2027015296}
+  playerRB: {fileID: 2089956916}
+  portalOpenLeft: 0
+  portalOpenRight: 1
+  portalOpenUp: 0
+  portalOpenDown: 0
   thisPortal: {fileID: 152426880}
   othrPortal: {fileID: 998758442}
   charInThisPortal: 0
@@ -2253,6 +2258,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerRB: {fileID: 0}
+  portalOpenLeft: 0
+  portalOpenRight: 0
+  portalOpenUp: 0
+  portalOpenDown: 0
   thisPortal: {fileID: 595581292}
   othrPortal: {fileID: 734445551}
   charInThisPortal: 0
@@ -3148,6 +3158,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2027015296}
+  playerRB: {fileID: 2089956916}
+  portalOpenLeft: 0
+  portalOpenRight: 0
+  portalOpenUp: 1
+  portalOpenDown: 0
   thisPortal: {fileID: 734445551}
   othrPortal: {fileID: 1655739410}
   charInThisPortal: 0
@@ -4907,6 +4922,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2027015296}
+  playerRB: {fileID: 2089956916}
+  portalOpenLeft: 0
+  portalOpenRight: 1
+  portalOpenUp: 0
+  portalOpenDown: 0
   thisPortal: {fileID: 988797803}
   othrPortal: {fileID: 1011375171}
   charInThisPortal: 0
@@ -5000,6 +5020,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2027015296}
+  playerRB: {fileID: 2089956916}
+  portalOpenLeft: 1
+  portalOpenRight: 0
+  portalOpenUp: 0
+  portalOpenDown: 0
   thisPortal: {fileID: 998758442}
   othrPortal: {fileID: 152426880}
   charInThisPortal: 0
@@ -5170,6 +5195,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2027015296}
+  playerRB: {fileID: 2089956916}
+  portalOpenLeft: 1
+  portalOpenRight: 0
+  portalOpenUp: 0
+  portalOpenDown: 0
   thisPortal: {fileID: 1011375171}
   othrPortal: {fileID: 988797803}
   charInThisPortal: 0
@@ -7326,6 +7356,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2027015296}
+  playerRB: {fileID: 2089956916}
+  portalOpenLeft: 0
+  portalOpenRight: 0
+  portalOpenUp: 1
+  portalOpenDown: 0
   thisPortal: {fileID: 1655739410}
   othrPortal: {fileID: 734445551}
   charInThisPortal: 0
@@ -7897,6 +7932,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerRB: {fileID: 0}
+  portalOpenLeft: 0
+  portalOpenRight: 0
+  portalOpenUp: 0
+  portalOpenDown: 0
   thisPortal: {fileID: 1655739410}
   othrPortal: {fileID: 734445551}
   charInThisPortal: 0
@@ -8933,6 +8973,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 89
+--- !u!50 &2089956916 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 50000013946997372, guid: 1b50d3dc8d88a43bdb96ee7608aaf1ff,
+    type: 2}
+  m_PrefabInternal: {fileID: 1921532416}
 --- !u!1 &2101892593
 GameObject:
   m_ObjectHideFlags: 0
