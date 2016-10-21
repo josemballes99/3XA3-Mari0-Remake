@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Mari0 Gantt Project" company="McMaster 3XA3 Ninetendo" webLink="" view-date="2016-08-21" view-index="0" gantt-divider-location="354" resource-divider-location="300" version="2.8.1" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Mari0 Gantt Project" company="McMaster 3XA3 Ninetendo" webLink="" view-date="2016-09-01" view-index="0" gantt-divider-location="354" resource-divider-location="300" version="2.8.1" locale="en_US">
     <description/>
-    <view zooming-state="default:7" id="gantt-chart">
+    <view zooming-state="default:8" id="gantt-chart">
         <field id="tpd3" name="Name" width="199" order="0"/>
         <field id="tpd4" name="Begin date" width="75" order="1"/>
         <field id="tpd5" name="End date" width="74" order="2"/>
@@ -85,14 +85,14 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Requirements Document" color="#ff6666" shape="0,1,1,0,1,1,1,1,1,1,1,1,0,1,1,0" meeting="false" start="2016-09-30" duration="7" complete="0" priority="2" expand="true"/>
+        <task id="0" name="Requirements Document" color="#ff6666" shape="0,1,1,0,1,1,1,1,1,1,1,1,0,1,1,0" meeting="false" start="2016-09-30" duration="11" complete="0" priority="2" expand="true"/>
         <task id="5" name="Proof of Concept Demonstration" color="#8cb6ce" meeting="false" start="2016-10-19" duration="3" complete="0" expand="true"/>
-        <task id="3" name="Get Graphics and Scenes Operating" color="#ff9999" shape="1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0" meeting="false" start="2016-10-11" duration="8" complete="0" expand="true">
+        <task id="3" name="Get Sprite Animations Displaying For The Character" color="#ff9999" shape="1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0" meeting="false" start="2016-10-15" duration="4" complete="0" expand="true">
             <depend id="5" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="55" name="Create a controller for the character" color="#ff9999" shape="1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0" meeting="false" start="2016-10-12" duration="3" complete="0" expand="true"/>
         <task id="13" name="Test Plan Revision 0 Due" color="#8cb6ce" meeting="false" start="2016-10-28" duration="1" complete="0" expand="true"/>
-        <task id="16" name="Test Plan Revision" color="#ff3333" shape="1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1" meeting="false" start="2016-10-19" duration="9" complete="0" priority="2" expand="true">
+        <task id="16" name="Test Plan Revision" color="#ff3333" shape="1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1" meeting="false" start="2016-10-22" duration="6" complete="0" priority="2" expand="true">
             <depend id="13" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="46" name="Work on Mechanics for Portal Gun" color="#ff9999" shape="1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0" meeting="false" start="2016-10-13" duration="13" complete="0" priority="2" expand="true"/>
