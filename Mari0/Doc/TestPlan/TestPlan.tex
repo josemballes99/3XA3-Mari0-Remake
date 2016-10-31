@@ -1,0 +1,253 @@
+\documentclass[12pt, titlepage]{article}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=red,
+    urlcolor=blue
+}
+\usepackage[round]{natbib}
+
+\title{SE 3XA3: Test Plan\\Title of Project}
+
+\author{Team \#, Team Name
+		\\ Student 1 name and macid
+		\\ Student 2 name and macid
+		\\ Student 3 name and macid
+}
+
+\date{\today}
+
+\input{../Comments}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+\listoffigures
+
+\begin{table}[bp]
+\caption{\bf Revision History}
+\begin{tabularx}{\textwidth}{p{3cm}p{2cm}X}
+\toprule {\bf Date} & {\bf Version} & {\bf Notes}\\
+\midrule
+Date 1 & 1.0 & Notes\\
+Date 2 & 1.1 & Notes\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\pagenumbering{arabic}
+
+This document ...
+
+\section{General Information}
+
+\subsection{Purpose}
+
+\subsection{Scope}
+
+\subsection{Acronyms, Abbreviations, and Symbols}
+	
+\begin{table}[hbp]
+\caption{\textbf{Table of Abbreviations}} \label{Table}
+
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+\textbf{Abbreviation} & \textbf{Definition} \\
+\midrule
+Abbreviation1 & Definition1\\
+Abbreviation2 & Definition2\\
+\bottomrule
+\end{tabularx}
+
+\end{table}
+
+\begin{table}[!htbp]
+\caption{\textbf{Table of Definitions}} \label{Table}
+
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+\textbf{Term} & \textbf{Definition}\\
+\midrule
+Term1 & Definition1\\
+Term2 & Definition2\\
+\bottomrule
+\end{tabularx}
+
+\end{table}	
+
+\subsection{Overview of Document}
+
+\section{Plan}
+	
+\subsection{Software Description}
+
+\subsection{Test Team}
+
+\subsection{Automated Testing Approach}
+
+\subsection{Testing Tools}
+
+\subsection{Testing Schedule}
+		
+See Gantt Chart at the following url ...
+
+\section{System Test Description}
+	
+\subsection{Tests for Functional Requirements}
+
+\subsubsection{Area of Testing1}
+		
+\paragraph{Title for Test}
+
+\begin{enumerate}
+
+\item{test-id1\\}
+
+Type: Functional, Dynamic, Manual, Static etc.
+					
+Initial State: 
+					
+Input: 
+					
+Output: 
+					
+How test will be performed: 
+					
+\item{test-id2\\}
+
+Type: Functional, Dynamic, Manual, Static etc.
+					
+Initial State: 
+					
+Input: 
+					
+Output: 
+					
+How test will be performed: 
+
+\end{enumerate}
+
+\subsubsection{Area of Testing2}
+
+...
+
+\subsection{Tests for Nonfunctional Requirements}
+
+\subsubsection{Area of Testing1}
+		
+\paragraph{Title for Test}
+
+\begin{enumerate}
+
+\item{test-id1\\}
+
+Type: 
+					
+Initial State: 
+					
+Input/Condition: 
+					
+Output/Result: 
+					
+How test will be performed: 
+					
+\item{test-id2\\}
+
+Type: Functional, Dynamic, Manual, Static etc.
+					
+Initial State: 
+					
+Input: 
+					
+Output: 
+					
+How test will be performed: 
+
+\end{enumerate}
+
+\subsubsection{Area of Testing2}
+
+...
+
+\section{Tests for Proof of Concept}
+
+A proof on concept test will be used to show that the development for Mari0 is feasible with the current skills and technology we have available to us. This section describes the proof of concept test and the details associated with it.
+
+\subsection{Demonstration Plan}
+For a proof of concept test we will create a small prototype that will be ran from Unity that can be used on Windows 10, MacOS, and Ubuntu. The prototype will be a small game demo demonstrating collision detection with different in game objects, the main gravity system, and the portal interactions. Many of these different game elements will be implemented using the Unity's collision and physics engines, as this will make our final goal easier to achieve. The main  graphics that are used in the actual game will be used for this demo.
+
+The prototype will be a floor that will be similar to the final game, which will be populated with the player character, six portals, two pipes, and platforms which the character can interact with. The player will be able to stand on the main floor and the platforms. There are also no walls to contain the character on either side.
+
+The player (which will be represented by Mario) can be controlled in the following ways:
+\begin{itemize}  
+\item The player moves left and right with the 'a' and 'd' keys respectively
+\item The player can jump by using the spacebar
+\end{itemize}
+
+
+The player will interact with the different objects in the following ways:
+\begin{itemize}  
+\item The floor will be the main platform that the user will be able to stand on.
+\item The pipes will act like walls when approached from the side and not allow the user to pass through, and act like a floor when approached from the top.
+\item All 6 portals are paired in different ways, when entering a blue portal, the character will exit the orange portal, and vice versa.
+\item All physics will be maintained when entering through a portal, and portals can be on any surface that is at least two units.
+\end{itemize}
+
+
+\paragraph{Proof of Concept Test}
+
+Many of the tests that are demonstrated in the proof of concept will be stated in the System Tests section of this document.
+
+\begin{enumerate}
+
+\item{Proof of Concept}
+
+Type: Manual
+
+Tester(s): Development Team and Colleagues
+
+Description: Tests whether significant risks to the completion of the project can be overcome.
+
+\end{enumerate}
+	
+\section{Comparison to Existing Implementation}	
+				
+\section{Unit Testing Plan}
+		
+\subsection{Unit testing of internal functions}
+		
+\subsection{Unit testing of output files}		
+
+\bibliographystyle{plainnat}
+
+\bibliography{SRS}
+
+\newpage
+
+\section{Appendix}
+
+This is where you can place additional information.
+
+\subsection{Symbolic Parameters}
+
+The definition of the test cases will call for SYMBOLIC\_CONSTANTS.
+Their values are defined in this section for easy maintenance.
+
+\subsection{Usability Survey Questions?}
+
+This is a section that would be appropriate for some teams.
+
+\end{document}
