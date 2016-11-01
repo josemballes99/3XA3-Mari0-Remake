@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  31 OCT 2016 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  31 OCT 2016 21:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -206,7 +206,11 @@ Package color Info: Driver file: pdftex.def on input line 144.
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gread@gobject=\count103
 )))
-(./TestPlan.aux)
+(./TestPlan.aux
+
+LaTeX Warning: Label `Table' multiply defined.
+
+)
 \openout1 = `TestPlan.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -225,8 +229,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 \AtBeginShipoutBox=\box26
 Package hyperref Info: Link coloring ON on input line 29.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -264,26 +267,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+(./TestPlan.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+ [1])
 \tf@toc=\write4
 \openout4 = `TestPlan.toc'.
 
-
-Package hyperref Warning: old lot file detected, not used; run LaTeX again.
-
+ (./TestPlan.lot)
 \tf@lot=\write5
 \openout5 = `TestPlan.lot'.
 
-
-Package hyperref Warning: old lof file detected, not used; run LaTeX again.
-
+ (./TestPlan.lof)
 \tf@lof=\write6
 \openout6 = `TestPlan.lof'.
 
-[1]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) h
-as been already used, duplicate ignored
+ [2]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) 
+has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.107 \section
@@ -298,62 +302,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 196.
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+
+Overfull \hbox (32.17757pt too wide) in paragraph at lines 262--263
+[]\OT1/cmr/m/n/12 Description: The tester will make sure that the game has no s
+pelling/grammar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+[5]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 316.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 196.
- [4]
-No file TestPlan.bbl.
-[5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 316.
  [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
+No file TestPlan.bbl.
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 373.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
  (./TestPlan.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 373.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 373.
+Package rerunfilecheck Info: File `TestPlan.out' has not changed.
+(rerunfilecheck)             Checksum: 06B5C335B24D8DC998C3489CD1326F0F;2371.
 
 
-Package rerunfilecheck Warning: File `TestPlan.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `TestPlan.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  A56CCE0AE9D3EB6DF1729800F5CB1785;1828.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 373.
  ) 
 Here is how much of TeX's memory you used:
- 5382 strings out of 493014
- 78580 string characters out of 6133351
- 161216 words of memory out of 5000000
- 8858 multiletter control sequences out of 15000+600000
+ 5439 strings out of 493014
+ 79385 string characters out of 6133351
+ 164344 words of memory out of 5000000
+ 8892 multiletter control sequences out of 15000+600000
  8808 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,10n,28p,553b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,10n,28p,553b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on TestPlan.pdf (8 pages, 62472 bytes).
+Output written on TestPlan.pdf (11 pages, 72401 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 49 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
