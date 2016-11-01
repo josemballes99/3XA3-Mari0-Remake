@@ -108,41 +108,136 @@ See Gantt Chart at the following url ...
 	
 \subsection{Tests for Functional Requirements}
 
-\subsubsection{Area of Testing1}
-		
-\paragraph{Title for Test}
+\subsubsection{Input Testing}
 
 \begin{enumerate}
 
-\item{test-id1\\}
+\item{Run Right (Starting from Idle)\\}
+Type: Dynamic, Manual
+Initial State: In-game state where the character is not moving
+Input: RIGHT\_ARROW or D\_KEY on keyboard are pressed 
+Output: The character will be moving towards the right at a constant speed
+Tester(s): Development Team and Colleagues
+Description: The tester will make sure that the character?s movement functions as expected
 
-Type: Functional, Dynamic, Manual, Static etc.
-					
-Initial State: 
-					
-Input: 
-					
-Output: 
-					
-How test will be performed: 
-					
-\item{test-id2\\}
+\item{Run Left (Starting from Idle)\\}
+Type: Dynamic, Manual
+Initial State: In-game state where the character is not moving
+Input: LEFT\_ARROW or A\_KEY on keyboard are pressed
+Output: The character will be moving towards the left at a constant speed
+Tester(s): Development Team and Colleagues
+Description: The tester will make sure that the character?s movement functions as expected
+\item{Run Right (Starting from moving left)\\}
+Type: Dynamic, Manual
+Initial State: In-game state where the character is currently moving left at a constant speed
+Input: RIGHT\_ARROW or D\_KEY on keyboard are pressed
+Output: The character will be moving towards the right at a constant speed
+Tester(s): Development Team and Colleagues
+Description: The tester will make sure that the character?s movement functions as expected
+\item{Run Left (Starting from moving right)\\}
+Type: Dynamic, Manual
+Initial State: In-game state where the character is currently moving right at a constant speed
+Input: LEFT\_ARROW or A\_KEY on keyboard are pressed
+Output: The character will be moving towards the left at a constant speed
+Tester(s): Development Team and Colleagues
+Description: The tester will make sure that the character?s movement functions as expected
 
-Type: Functional, Dynamic, Manual, Static etc.
-					
-Initial State: 
-					
-Input: 
-					
-Output: 
-					
-How test will be performed: 
+\item{Stop (Starting from moving right)\\}
+Type: Dynamic, Manual
+Initial State: In-game state where the character is currently moving right at a constant speed
+Input: RIGHT\_ARROW or D\_KEY on keyboard are released
+Output: The character will reach a state of rest
+Tester(s): Development Team and Colleagues
+Description: The tester will make sure that the character stops moving accordingly
+\item{Stop (Starting from moving left)\\}
+Type: Dynamic, Manual
+Initial State: In-game state where the character is currently moving right at a constant speed
+Input: LEFT\_ARROW or A\_KEY on keyboard are released
+Output: The character will reach a state of rest
+Tester(s): Development Team and Colleagues
+Description: The tester will make sure that the character stops moving accordingly
+
+\item{Jump (Starting from Idle)\\}
+Type: Dynamic, Manual
+Initial State: In-game state where the character is not moving
+Input: SPACE\_BAR on keyboard is pressed
+Output: The character will move upwards with an instantaneous force against a platform object it is on top of
+Tester(s): Development Team and Colleagues
+Description: The tester will make sure that the motion of jumping stays consistent through the trial. The tester must make sure that no continuous anti-gravitational force is applied. 
+
+\item{Jump (Starting from running)\\}
+Type: Dynamic, Manual
+Initial State: In-game state where the character is currently running
+Input: SPACE\_BAR on keyboard is pressed
+Output: The character will move upwards with an instantaneous force against a platform object it is on top of and should contain the current horizontal speed
+Tester(s): Development Team and Colleagues
+Description: The tester will make sure that the motion of jumping stays consistent through the trial. The tester must make sure that no continuous anti-gravitational force is applied.
+
+\item{Jump (While airborne)\\}
+Type: Dynamic, Manual
+Initial State: In-game state where the character is currently midair
+Input: SPACE\_BAR on keyboard is pressed
+Output: The character?s current movement will continue without alterations
+Tester(s): Development Team and Colleagues
+Description: The tester must make sure that no continuous anti-gravitational force is applied.
+
+\item{Fire Blue Portal\\}
+Type: Dynamic, Manual
+Initial State: Any In-game state
+Input: LEFT\_CLICK on supported platform
+Output: Blue portal is formed on platform
+Tester(s): Development Team and Colleagues
+Description: The tester checks if portals are able to be fired on a platform that is at least two units long.
+\item{Fire Orange Portal\\}
+Type: Dynamic, Manual
+Initial State: Any in-game state
+Input: RIGHT\_CLICK on supported platform
+Output: Orange portal is formed on platform
+Tester(s): Development Team and Colleagues
+Description: The tester checks if portals are able to be fired on a platform that is at least two units long.
+
+\item{Pause\\}
+Type: Dynamic, Manual
+Initial State: Any In-Game State
+Input: P\_KEY on keyboard is pressed
+Output: The Pause menu is brought up
+Tester(s): Development Team and Colleagues
+Description: The tester checks to see if they can pause the current game
+\item{Play Game\\}
+Type: Dynamic, Manual
+Initial State: Main Menu
+Input: LEFT\_CLICK on PLAY option in the main menu
+Output: The game begins
+Tester(s): Development Team and Colleagues
+Description: The tester checks to see if they can start a new game
+
+\item{Help\\}
+Type: Dynamic, Manual
+Initial State: Main Menu
+Input: LEFT\_CLICK on HELP option in the main menu
+Output: The help menu is brought up
+Tester(s): Development Team and Colleagues
+Description: The tester checks to see if they can view the help menu
+
+\item{Options\\}
+Type: Dynamic, Manual
+Initial State: Main Menu
+Input: LEFT\_CLICK on OPTIONS option in the main menu
+Output: The options menu is brought up
+Tester(s): Development Team and Colleagues
+Description: The tester checks to see if they can view the options menu
 
 \end{enumerate}
 
-\subsubsection{Area of Testing2}
+\subsubsection{Object Collision Testing}
 
-...
+\begin{enumerate}
+
+\item{Collision with Wall\\}Type: Dynamic, ManualInitial State: Character is moving toward wallInput/Condition: Character hits wall objectOutput: Character is stopped by wallTester(s): Development Team and ColleaguesDescription: The tester checks if characters make impact with wall\item{Collision with Floor Platform\\}Type: Dynamic, ManualInitial State: Character is on/falling towards floor platformInput/Condition: Character hits floor objectOutput: Character lands and stays on platformTester(s): Development Team and ColleaguesDescription: The tester checks if floor platforms are working as expected\item{Collision with Flag\\}Type: Dynamic, ManualInitial State: Character is moving toward a flagInput/Condition: Character hits the flag objectOutput: Level is won user stops controlling characterTester(s): Development Team and ColleaguesDescription: The tester checks if flag objects work and can finish the level
+
+\item{Collision with Blue Portal\\}Type: Dynamic, ManualInitial State: Game Object is moving toward portalInput/Condition: Game Object hits blue portal objectOutput: Game Object teleports to the orange portal?s location conserving previous movement speedTester(s): Development Team and ColleaguesDescription: The tester checks if Game Objects can teleport through portals\item{Collision with Orange Portal\\}Type: Dynamic, ManualInitial State: Game Object is moving toward portalInput/Condition: Game Object hits orange portal objectOutput: Game Object teleports to the blue portal?s location conserving previous movement speedTester(s): Development Team and ColleaguesDescription: The tester checks if Game Objects can teleport through portals\item{Collision with Goombas (front facing collision)\\}Type: Dynamic, ManualInitial State: Character is moving toward a GoombaInput/Condition: Character hits a Goomba body front firstOutput: Character loses a lifeTester(s): Development Team and ColleaguesDescription: The tester checks if Goombas can defeat the character\item{Collision with Goombas (foot first collision)\\}Type: Dynamic, ManualInitial State: Character is moving toward a GoombaInput/Condition: Character hits a Goomba body foot firstOutput: Goomba is defeatedTester(s): Development Team and ColleaguesDescription: The tester checks if they can defeat the Goomba\item{Collision with Koopas (front facing collision)\\}Type: Dynamic, ManualInitial State: Character is moving toward a KoopaInput/Condition: Character hits a Koopa body front firstOutput: Character loses a lifeTester(s): Development Team and ColleaguesDescription: The tester checks if Koopas can defeat the character\item{Collision with Koopas (foot first collision)\\}Type: Dynamic, ManualInitial State: Character is moving toward a KoopaInput/Condition: Character hits a Koopa body foot firstOutput: Koopa transforms to shell formTester(s): Development Team and ColleaguesDescription: The tester checks if they can defeat the Koopa\item{Collision with Koopa Shell (front facing collision)\\}Type: Dynamic, ManualInitial State: Character is moving toward a Koopa ShellInput/Condition: Character hits a Koopa shell front firstOutput: Character loses a lifeTester(s): Development Team and ColleaguesDescription: The tester checks if Koopa Shells can defeat the character\item{Collision with Koopa Shell (foot first collision)\\}Type: Dynamic, ManualInitial State: Character is moving toward a Koopa ShellInput/Condition: Character hits a Koopa shell foot firstOutput: Koopa shell is defeatedTester(s): Development Team and ColleaguesDescription: The tester checks if they can defeat the Koopa Shell\item{Collision with Bullet Bill (front facing collision)\\}Type: Dynamic, ManualInitial State: Character is moving toward Bullet BillInput/Condition: Character hits a Bullet Bill body front firstOutput: Character loses a lifeTester(s): Development Team and ColleaguesDescription: The tester checks if Bullet Bill can defeat the character\item{Collision with Bullet Bill (foot first collision)\\}Type: Dynamic, ManualInitial State: Character is moving toward Bullet BillInput/Condition: Character hits a Bullet Bill body foot firstOutput: Bullet Bill is defeatedTester(s): Development Team and ColleaguesDescription: The tester checks if they can defeat a Bullet Bill
+
+\end{enumerate}
 
 \subsection{Tests for Nonfunctional Requirements}
 The different tests listed will demonstrate that the non-functional requirements in the software requirements specification are met.
