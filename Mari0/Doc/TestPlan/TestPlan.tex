@@ -14,12 +14,12 @@
 }
 \usepackage[round]{natbib}
 
-\title{SE 3XA3: Test Plan\\Title of Project}
+\title{SE 3XA3: Test Plan\\Mari0}
 
-\author{Team \#, Team Name
-		\\ Student 1 name and macid
-		\\ Student 2 name and macid
-		\\ Student 3 name and macid
+\author{Team 9, Ninetendo
+		\\ David Hobson - hobsondd
+		\\ Jose Miguel Ballesteros - ballesjm
+		\\ Jeff Pineda - pinedaj
 }
 
 \date{\today}
@@ -40,7 +40,7 @@
 \begin{tabularx}{\textwidth}{p{3cm}p{2cm}X}
 \toprule {\bf Date} & {\bf Version} & {\bf Notes}\\
 \midrule
-Date 1 & 1.0 & Notes\\
+2016-10-31 & 1.0 & Created document\\
 Date 2 & 1.1 & Notes\\
 \bottomrule
 \end{tabularx}
@@ -55,9 +55,9 @@ This document ...
 \section{General Information}
 
 \subsection{Purpose}
-
+Testing is a critical part of developing software to both ensure the program meets the project's requirements and to address the errors of the product. 
 \subsection{Scope}
-
+In regard to our project, the game Mari0, the tests implemented will need to be carefully chosen in order to ensure that the game is above all else, fun. The chosen tests must also give the stakeholders of the project the assurance and confidence that the game plays and functions accordingly to the requirements outlined in the Software Requirements Specification (SRS) document. Testing will be automated where possible, however it is a necessity to test for certain attributes of the gamemanually.
 \subsection{Acronyms, Abbreviations, and Symbols}
 	
 \begin{table}[hbp]
@@ -67,42 +67,73 @@ This document ...
 \toprule
 \textbf{Abbreviation} & \textbf{Definition} \\
 \midrule
-Abbreviation1 & Definition1\\
-Abbreviation2 & Definition2\\
+A.I. & Artificial Intelligence\\
+G.U.I. / U.I. & Graphical User Interface / User Interface\\
+SMB & Super Mario Bros.\\
+SRS & Software Requirements Specifications\\
 \bottomrule
 \end{tabularx}
 
 \end{table}
 
-\begin{table}[!htbp]
-\caption{\textbf{Table of Definitions}} \label{Table}
 
-\begin{tabularx}{\textwidth}{p{3cm}X}
-\toprule
-\textbf{Term} & \textbf{Definition}\\
-\midrule
-Term1 & Definition1\\
-Term2 & Definition2\\
-\bottomrule
-\end{tabularx}
-
-\end{table}	
+\begin{table}
+\caption{Table of Definitions}
+\begin{tabular}{l l}
+\hline
+Term			& Definition \\
+\hline
+Mario      		 & The character that the player portrays  \\
+Portals      		 & Two connected portals that allow characters and projectiles to \\
+			 & enter one and exit through the other, whilst mainting physial \\
+			 & properties such as velocity and acceleration \\
+Goomba		 & Enemy character that is defeated after the player stomps on the top \\
+			 & of its head	  \\
+Koopa Troopa	 & Enemy character that is defeated after the player stomps on \\
+			 & the top of its head; leaves behind a shell that can be used as a projectile	\\
+Lives			 & The amount of times the player can die before game over	\\
+Question Block	 & Blocks found that when hit give the player coins or power ups	\\
+Super Mushroom	 & Type of power up, lets Mario take an extra hit from enemies	\\
+Fire Flower		 & Type of power up, gives Mario the ability to throw fireballs	\\
+Time Limit		 & The amount of time in seconds the player has left complete the \\
+			 & level before losing a life and restarting the level	\\
+Score			 & The amount of points a player has obtained by collecting coins \\
+			 & or killing enemy characters	\\
+\hline
+\end{tabular}
+\end{table}
 
 \subsection{Overview of Document}
-
+	This document will describe our project of reimplementing Mari0, the test team and the tools and frameworks that they will be using, and a list and description of the tests we will be using to ensure our game meets the requirements listed in the SRS.
 \section{Plan}
 	
 \subsection{Software Description}
-
+The core game mechanics of Mari0 involve the simple platforming mechanics of moving left or right, and jumping; in addition to portals which allow characters and objects to be teleported between two portals while maintaining their physical characteristics.
 \subsection{Test Team}
-
+All members of Ninetendo, David Hobson, Jose Miguel Ballesteros, and Jeff Pineda, are to actively create and implement tests and test cases, and are also responsible for recording each tests' results.
 \subsection{Automated Testing Approach}
-
+If a method being written can be tested automatically, the test will be concurrently written alongside it or shortly after the method's completion. 
 \subsection{Testing Tools}
-
+As mentioned in the technology section of our Development Plan document, we will be using the NUnit framework to conduct our unit tests. Manual testing will be done in the Unity play mode interface.
 \subsection{Testing Schedule}
-		
-See Gantt Chart at the following url ...
+
+\begin{table}[hbp]
+\caption{\textbf{Testing Schedule}} \label{Table}
+
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+\textbf{Date} & \textbf{What is being tested} \\
+\midrule
+	Wed Nov 2 &	Testing player input and character movement \\
+	Fri Nov 4 & Testing character physics and character rules (death)\\
+	Wed Nov 9 & Testing enemy A.I. and A.I. rules\\
+	Fri Nov 11 & Testing portal mechanics\\
+	Mon Nov 14 & Testing level design\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\href{run:../../ProjectSchedule/ProjectSchedule.gan}{Click here for the Gantt Chart.}
 
 \section{System Test Description}
 	
@@ -439,13 +470,13 @@ Description: Tests whether significant risks to the completion of the project ca
 \end{enumerate}
 	
 \section{Comparison to Existing Implementation}	
-				
+	Since the functional and non-function requirements that Mari0 must meet are derived from the original implementation, all system tests that tests whether or not these requirements are met will be the metric used to determine the likeness of our reimplementation to the original product.
 \section{Unit Testing Plan}
-		
+	The NUnit framework will be used to conduct all unit tests of Mari0. We will conduct our testing in a manner that satisfies a complete condition coverage criteria.
 \subsection{Unit testing of internal functions}
-		
+	Internal functions and methods that return any value type, such as integer, float, boolean, etc. can and will be tested dynamically, with player inputs or input conditions being given and comparing the actual output to the expected output. Due to the development and testing schedule, the use of drivers is not needed, and the use of stubs will be very limited if they are used at all. Since any video game is inherently dependant on player actions and how their interactions affect the game, we will be testing for complete condition coverage.
 \subsection{Unit testing of output files}		
-
+	Mari0 will have no output files to be tested. The only output file the original implementation had was a saved game file that kept track of the players progress, however, due to limiting our reimplementation of the game to a single level, a save file is unnecessary.
 \bibliographystyle{plainnat}
 
 \bibliography{SRS}
@@ -461,8 +492,16 @@ This is where you can place additional information.
 The definition of the test cases will call for SYMBOLIC\_CONSTANTS.
 Their values are defined in this section for easy maintenance.
 
-\subsection{Usability Survey Questions?}
+\subsection{Usability Survey Questions}
 
-This is a section that would be appropriate for some teams.
+\begin{itemize}
+Since many functionalities of Mari0 are difficult to test, either due to testing having to be done manually or a bias by the development team during testing, the following usability suvey questions have been listed to test some of these difficult functionalities
+  \item Are the portal mechanics intuitive and easy to understand?
+  \item Do the controls feel smooth?
+  \item Do you feel like you have full or good control of the character?
+  \item Are the U.I. elements obtrusive? Easily readable? Aesthetically pleasing?
+  \item Do you think the game is fair?
+  \item Do you think the game is fun?
+\end{itemize}
 
 \end{document}
