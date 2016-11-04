@@ -47,7 +47,7 @@ Date 2 & 1.1 & Notes\\
 \newpage
 
 \pagenumbering{arabic}
-
+\textcolor{red}{The suspense is killing me... - CM} \\
 This document ...
 
 \section{General Information}
@@ -720,7 +720,6 @@ A proof on concept test will be used to show that the development for Mari0 is f
 For a proof of concept test we will create a small prototype that will be ran from Unity that can be used on Windows 10, MacOS, and Ubuntu. The prototype will be a small game demo demonstrating collision detection with different in game objects, the main gravity system, and the portal interactions. Many of these different game elements will be implemented using the Unity's collision and physics engines, as this will make our final goal easier to achieve. The main  graphics that are used in the actual game will be used for this demo.
 
 The prototype will be a floor that will be similar to the final game, which will be populated with the player character, six portals, two pipes, and platforms which the character can interact with. The player will be able to stand on the main floor and the platforms. There are also no walls to contain the character on either side.
-
 The player (which will be represented by Mario) can be controlled in the following ways:
 \begin{itemize}  
 \item The player moves left and right with the 'a' and 'd' keys respectively
@@ -740,7 +739,7 @@ The player will interact with the different objects in the following ways:
 \paragraph{Proof of Concept Test}
 
 Many of the tests that are demonstrated in the proof of concept will be stated in the System Tests section of this document.
-
+\textcolor{red}{Not really a test, try referencing above tests - CM} \\
 \begin{enumerate}
 
 \item{Proof of Concept}
@@ -754,9 +753,11 @@ Description: Tests whether significant risks to the completion of the project ca
 \end{enumerate}
 	
 \section{Comparison to Existing Implementation}	
+\textcolor{red}{If your system cannot save, does it fail? Be specific and identify scope - CM} \\
 	Since the functional and non-function requirements that Mari0 must meet are derived from the original implementation, all system tests that tests whether or not these requirements are met will be the metric used to determine the likeness of our reimplementation to the original product.
 \section{Unit Testing Plan}
 	The NUnit framework will be used to conduct all unit tests of Mari0. We will conduct our testing in a manner that satisfies a complete condition coverage criteria.
+	\textcolor{red}{How can you ensure code coverage? - CM} \\
 \subsection{Unit testing of internal functions}
 	Internal functions and methods that return any value type, such as integer, float, boolean, etc. can and will be tested dynamically, with player inputs or input conditions being given and comparing the actual output to the expected output. Due to the development and testing schedule, the use of drivers is not needed, and the use of stubs will be very limited if they are used at all. Since any video game is inherently dependant on player actions and how their interactions affect the game, we will be testing for complete condition coverage.
 \subsection{Unit testing of output files}		
