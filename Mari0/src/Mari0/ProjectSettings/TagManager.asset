@@ -4,6 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Portable
   - Orange Portal
   layers:
   - Default
@@ -14,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - 
   - 
   - 
