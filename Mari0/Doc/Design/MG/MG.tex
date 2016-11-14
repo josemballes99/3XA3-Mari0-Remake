@@ -29,17 +29,17 @@
 \newcommand{\mthemnum}{M\themnum}
 \newcommand{\mref}[1]{M\ref{#1}}
 
-\title{SE 3XA3: Software Requirements Specification\\Title of Project}
+\title{SE 3XA3: Design Document\\Mari0}
 
-\author{Team \#, Team Name
-		\\ Student 1 name and macid
-		\\ Student 2 name and macid
-		\\ Student 3 name and macid
+\author{Team 9, Ninetendo
+		\\ David Hobson hobsondd
+		\\ Jose Miguel Ballesteros ballesjm
+		\\ Jeff Pineda pinedaj
 }
 
 \date{\today}
 
-\input{../../Comments}
+\input{../Comments}
 
 \begin{document}
 
@@ -55,8 +55,7 @@
 \begin{tabularx}{\textwidth}{p{3cm}p{2cm}X}
 \toprule {\bf Date} & {\bf Version} & {\bf Notes}\\
 \midrule
-Date 1 & 1.0 & Notes\\
-Date 2 & 1.1 & Notes\\
+2016-11-13 & 1.0 & Creation of rev0\\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -117,43 +116,29 @@ other shows the relation between anticipated changes and the modules. Section
 \ref{SecUse} describes the use relation between modules.
 
 \section{Anticipated and Unlikely Changes} \label{SecChange}
-
-This section lists possible changes to the system. According to the likeliness
-of the change, the possible changes are classified into two
-categories. Anticipated changes are listed in Section \ref{SecAchange}, and
+This section shows some of the upcoming changes to Mari0 listed into two categories. 
+Anticipated changes are listed in Section \ref{SecAchange}, and
 unlikely changes are listed in Section \ref{SecUchange}.
 
 \subsection{Anticipated Changes} \label{SecAchange}
 
-Anticipated changes are the source of the information that is to be hidden
-inside the modules. Ideally, changing one of the anticipated changes will only
-require changing the one module that hides the associated decision. The approach
-adapted here is called design for
-change.
+Some of the changes below are what we believe will be implemented as development continues. Due to the modularization of our software, many of the changes that will happen will be simple and allow the system to function properly.
 
 \begin{description}
-\item[\refstepcounter{acnum} \actheacnum \label{acHardware}:] The specific
-  hardware on which the software is running.
-\item[\refstepcounter{acnum} \actheacnum \label{acInput}:] The format of the
-  initial input data.
-\item ...
+\item[\refstepcounter{acnum} \actheacnum \label{acEnvironments}:] Level Environments. All of the levels that will be created will be unique and making sure that game objects interact properly is crucial.
+\item[\refstepcounter{acnum} \actheacnum \label{acEnemiest}:] Types of Enemies. Adding new enemies in the game is expected and is considered in the design.
+\item [\refstepcounter{acnum} \actheacnum \label{acOperatingSys}:] Operating System. All operating systems will be supported and allowing the software to be dynamic and run on these systems is important.
+\item [\refstepcounter{acnum} \actheacnum \label{acMusic}:] Music and Sound Effects. These will be changed based off of different environmental factors of the game.
 \end{description}
 
 \subsection{Unlikely Changes} \label{SecUchange}
 
-The module design should be as general as possible. However, a general system is
-more complex. Sometimes this complexity is not necessary. Fixing some design
-decisions at the system architecture stage can simplify the software design. If
-these decision should later need to be changed, then many parts of the design
-will potentially need to be modified. Hence, it is not intended that these
-decisions will be changed.
+The changes listed below are changes that will not be considered as important for the final product and demonstration.
 
 \begin{description}
-\item[\refstepcounter{ucnum} \uctheucnum \label{ucIO}:] Input/Output devices
-  (Input: File and/or Keyboard, Output: File, Memory, and/or Screen).
-\item[\refstepcounter{ucnum} \uctheucnum \label{ucInput}:] There will always be
-  a source of input data external to the software.
-\item ...
+\item[\refstepcounter{ucnum} \uctheucnum \label{ucPlatform}:] Platform. For this game, the only platform that it will run on will be a personal computer, although operating systems may change, this game will not run on mobile or game console devices.
+\item[\refstepcounter{ucnum} \uctheucnum \label{ucSprites}:] Sprites/Models. Although in the original game there?s customization available for sprites, this will not be considered in our design.
+\item[\refstepcounter{ucnum} \uctheucnum \label{ucMechanics}:] Game Mechanics. The basic idea of the game will stay as a platformer with the player walking to the right and interacting with different obstacles.
 \end{description}
 
 \section{Module Hierarchy} \label{SecMH}
@@ -165,9 +150,17 @@ actually be implemented.
 
 \begin{description}
 \item [\refstepcounter{mnum} \mthemnum \label{mHH}:] Hardware-Hiding Module
-\item ...
+\item  [\refstepcounter{mnum} \mthemnum \label{mMI}:] Mouse Input Module
+\item  [\refstepcounter{mnum} \mthemnum \label{mKI}:] Keyboard Input Module
+\item  [\refstepcounter{mnum} \mthemnum \label{mInput}:] Input Format Module
+\item  [\refstepcounter{mnum} \mthemnum \label{mPP}:] Portal Phyiscs Module
+\item  [\refstepcounter{mnum} \mthemnum \label{mPG}:] Portal Gun Module
+\item  [\refstepcounter{mnum} \mthemnum \label{mGO}:] Game Object Module
+\item  [\refstepcounter{mnum} \mthemnum \label{mPO}:] Player Object Module
+\item  [\refstepcounter{mnum} \mthemnum \label{mSM}:] Sprite/Model Module
+\item  [\refstepcounter{mnum} \mthemnum \label{mInterface}:] Interface Module
+\item  [\refstepcounter{mnum} \mthemnum \label{mCD}:] Collision Detection Module
 \end{description}
-
 
 \begin{table}[h!]
 \centering
@@ -179,19 +172,17 @@ actually be implemented.
 {Hardware-Hiding Module} & ~ \\
 \midrule
 
-\multirow{7}{0.3\textwidth}{Behaviour-Hiding Module} & ?\\
-& ?\\
-& ?\\
-& ?\\
-& ?\\
-& ?\\
-& ?\\ 
-& ?\\
+\multirow{7}{0.3\textwidth}{Behaviour-Hiding Module}
+& Collision Detection Module\\
+& Event Input Module\\
+& Interface Module\\
+& Sprite/Model Module\\
 \midrule
 
-\multirow{3}{0.3\textwidth}{Software Decision Module} & {?}\\
-& ?\\
-& ?\\
+\multirow{3}{0.3\textwidth}{Software Decision Module}
+& Portal Physics Module\\
+& Game Object Module\\
+& Player Object Module\\
 \bottomrule
 
 \end{tabular}
@@ -234,6 +225,24 @@ selected.
 \item[Implemented By:] OS
 \end{description}
 
+\subsubsection{Mouse Inputs (\mref{mMI})}
+
+\begin{description}
+\item[Secrets:] How mouse input is used in relation to the computer
+\item[Services:] Player mouse inputs are displayed on-screen 
+\item[Implemented By:] OS
+\end{description}
+
+\subsubsection{Keyboard Inputs (\mref{mKI})}
+
+\begin{description}
+\item[Secrets:] How keyboard input is used in relation to the computer
+\item[Services:] Player keyboard inputs are displayed on-screen 
+\item[Implemented By:] OS
+\end{description}
+
+
+
 \subsection{Behaviour-Hiding Module}
 
 \begin{description}
@@ -252,11 +261,36 @@ selected.
 \item[Secrets:]The format and structure of the input data.
 \item[Services:]Converts the input data into the data structure used by the
   input parameters module.
-\item[Implemented By:] [Your Program Name Here]
+\item[Implemented By:] Mari0
 \end{description}
 
-\subsubsection{Etc.}
+\subsubsection{Portal Physics Module (\mref{mPP})}
+\begin{description}
+\item[Secrets:] How teleportation between two portals works and the game entities that can enter a portal
+\item[Services:] Teleports game entities that can be teleported between two portals
+\item[Implemented By:] Mari0
+\end{description}
 
+\subsubsection{Portal Gun Module (\mref{mPG})}
+\begin{description}
+\item[Secrets:] The coordinates of both the blue and the orange portal, and the coordinates of the surface the player is aiming at
+\item[Services:] Allows the player to aim and place either a blue portal or an orange portal on a surface
+\item[Implemented By:] Mari0
+\end{description}
+
+\subsubsection{Game Object Module (\mref{mGO})}
+\begin{description}
+\item[Secrets: ]The size and coordinates of the game object
+\item[Services:]Allows size and coordinates to be changed and be interacted with by the player
+\item[Implemented By:] Mari0
+\end{description}
+
+\subsubsection{Player Object Module (\mref{mPO})}
+\begin{description}
+\item[Secrets:]Size, coordinates of player object, player status (alive or dead), and player attributes such as speed, jump force, and gravity.
+\item[Services:]Allows size and coordinates to be changed and be interacted with by the player and keeps track of player status
+\item[Implemented By:] Mari0
+\end{description}
 
 \subsection{Software Decision Module}
 
@@ -271,7 +305,26 @@ selected.
 \item[Implemented By:] --
 \end{description}
 
-\subsubsection{Etc.}
+\subsubsection{Sprite/Model Module (\mref{mSM})}
+\begin{description}
+\item[Secrets:]How sprites and models are displayed in game
+\item[Services:]Displays sprites and models in game
+\item[Implemented By:] Mari0
+\end{description}
+
+\subsubsection{Interface Module (\mref{mInterface})}
+\begin{description}
+\item[Secrets:]Information about the game, such as time left, points scored, and current level
+\item[Services:]Keeps track of and displays game time, score, and current level
+\item[Implemented By:] Mari0
+\end{description}
+
+\subsubsection{Collision Detectionl Module (\mref{mCD})}
+\begin{description}
+\item[Secrets:]How collision is calculated
+\item[Services:]Determines whether two entities in the game are touching or will eventually touch one another
+\item[Implemented By:] Mari0
+\end{description}
 
 \section{Traceability Matrix} \label{SecTM}
 
@@ -342,7 +395,7 @@ because they use modules from the lower levels.
 
 \begin{figure}[H]
 \centering
-%\includegraphics[width=0.7\textwidth]{UsesHierarchy.png}
+\includegraphics[width=0.7\textwidth]{UsesHierarchy.png}
 \caption{Use hierarchy among modules}
 \label{FigUH}
 \end{figure}
