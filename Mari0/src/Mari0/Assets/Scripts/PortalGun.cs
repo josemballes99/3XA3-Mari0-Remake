@@ -3,11 +3,14 @@ using System.Collections;
 
 public class PortalGun : MonoBehaviour {
 
-    public Transform bluePortal;
-    public Transform orangePortal;
+    public Portal bluePortal;
+    public Portal orangePortal;
 
     public Collider2D bluePortalColl;
     public Collider2D orangePortalColl;
+
+    public BoxCollider2D vertColl;
+    public BoxCollider2D horiColl;
 
     // Used to select game objects that can have a portal placed on them
     public LayerMask toHit;
@@ -15,6 +18,7 @@ public class PortalGun : MonoBehaviour {
     private Transform gunPoint;
 
     // Keep track of portal position
+
 
 
     void Shoot(int portalColor) // 0 shoots a blue portal. 1 shoots an orange portal
@@ -30,15 +34,54 @@ public class PortalGun : MonoBehaviour {
 
         RaycastHit2D hit = Physics2D.Raycast(gunPointPos, aimDirection, 100, toHit);
 
-        Debug.Log("aim dir is: " + mousePos.ToString());
-
         if (portalColor == 0)
         {
             Debug.DrawLine(gunPointPos, aimDirection * 100, Color.blue);
             if (hit.collider != null)
             {
-                bluePortalColl.enabled = true;
-                bluePortal.position = new Vector3(hit.point.x, hit.point.y, 0);
+                if (hit.collider.gameObject.layer == 9)
+                {
+                    bluePortalColl.enabled = true;
+                    bluePortal.thisPortal.position = new Vector3(hit.point.x-0.8f, hit.point.y, 0);
+                    bluePortal.thisPortal.localEulerAngles = new Vector3(0f, 0f, 0f);
+                    // set booleans
+                    if (aimDirection.y < 0)
+                    {
+                        bluePortal.portalOpenRight = false;
+                        bluePortal.portalOpenDown = false;
+                        bluePortal.portalOpenUp = true;
+                        bluePortal.portalOpenLeft = false;
+                    }
+                    else if (aimDirection.y > 0)
+                    {
+                        bluePortal.portalOpenRight = false;
+                        bluePortal.portalOpenDown = true;
+                        bluePortal.portalOpenUp = false;
+                        bluePortal.portalOpenLeft = false;
+                    }
+                }
+                if (hit.collider.gameObject.layer == 10)
+                {
+                    bluePortalColl.enabled = true;
+                    bluePortal.thisPortal.position = new Vector3(hit.point.x, hit.point.y - 0.8f, 0);    // Vertical portal, offset transform so center of portal is where player aimed at
+                    bluePortal.thisPortal.localEulerAngles = new Vector3(0f, 0f, 90f);
+                    // Check portal orientation. Is this portal facing left or right?
+                    if (aimDirection.x < 0)
+                    {
+                        bluePortal.portalOpenRight = true;
+                        bluePortal.portalOpenDown = false;
+                        bluePortal.portalOpenUp = false;
+                        bluePortal.portalOpenLeft = false;
+                    }
+                    else if (aimDirection.x > 0)
+                    {
+                        bluePortal.portalOpenRight = false;
+                        bluePortal.portalOpenDown = false;
+                        bluePortal.portalOpenUp = false;
+                        bluePortal.portalOpenLeft = true;
+                    }
+                }
+                
             }
         }
 
@@ -47,8 +90,51 @@ public class PortalGun : MonoBehaviour {
             Debug.DrawLine(gunPointPos, aimDirection * 100, Color.yellow);
             if (hit.collider != null)
             {
-                orangePortalColl.enabled = true;
-                orangePortal.position = new Vector3(hit.point.x, hit.point.y, 0);
+
+
+
+                if (hit.collider.gameObject.layer == 9)
+                {
+                    orangePortalColl.enabled = true;
+                    orangePortal.thisPortal.position = new Vector3(hit.point.x - 0.8f, hit.point.y, 0);
+                    orangePortal.thisPortal.localEulerAngles = new Vector3(0f, 0f, 0f);
+                    // set booleans
+                    if (aimDirection.y < 0)
+                    {
+                        orangePortal.portalOpenRight = false;
+                        orangePortal.portalOpenDown = false;
+                        orangePortal.portalOpenUp = true;
+                        orangePortal.portalOpenLeft = false;
+                    }
+                    else if (aimDirection.y > 0)
+                    {
+                        orangePortal.portalOpenRight = false;
+                        orangePortal.portalOpenDown = true;
+                        orangePortal.portalOpenUp = false;
+                        orangePortal.portalOpenLeft = false;
+                    }
+                }
+                if (hit.collider.gameObject.layer == 10)
+                {
+                    orangePortalColl.enabled = true;
+                    orangePortal.thisPortal.position = new Vector3(hit.point.x, hit.point.y - 0.8f, 0);    // Vertical portal, offset transform so center of portal is where player aimed at
+                    orangePortal.thisPortal.localEulerAngles = new Vector3(0f, 0f, 90f);
+                    // Check portal orientation. Is this portal facing left or right?
+                    if (aimDirection.x < 0)
+                    {
+                        orangePortal.portalOpenRight = true;
+                        orangePortal.portalOpenDown = false;
+                        orangePortal.portalOpenUp = false;
+                        orangePortal.portalOpenLeft = false;
+                    }
+                    else if (aimDirection.x > 0)
+                    {
+                        orangePortal.portalOpenRight = false;
+                        orangePortal.portalOpenDown = false;
+                        orangePortal.portalOpenUp = false;
+                        orangePortal.portalOpenLeft = true;
+                    }
+                }
             }
         }
 
@@ -61,8 +147,6 @@ public class PortalGun : MonoBehaviour {
         }
 
     }
-
-
 
 	// Use this for initialization
 	void Start () {
@@ -87,4 +171,10 @@ public class PortalGun : MonoBehaviour {
             Shoot(1);
         }
 	}
+
+    void FixedUpdate()
+    {
+        bluePortal.teleport(orangePortal);
+        orangePortal.teleport(bluePortal);
+    }
 }

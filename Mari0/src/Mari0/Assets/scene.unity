@@ -100,7 +100,7 @@ GameObject:
   - 4: {fileID: 54941755}
   - 212: {fileID: 54941754}
   - 61: {fileID: 54941753}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - 4: {fileID: 61284790}
   - 212: {fileID: 61284789}
   - 61: {fileID: 61284788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   - 4: {fileID: 94471606}
   - 212: {fileID: 94471605}
   - 61: {fileID: 94471604}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   - 4: {fileID: 102234102}
   - 212: {fileID: 102234101}
   - 61: {fileID: 102234100}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +473,7 @@ GameObject:
   - 4: {fileID: 147312036}
   - 212: {fileID: 147312035}
   - 61: {fileID: 147312034}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   - 4: {fileID: 171869930}
   - 212: {fileID: 171869929}
   - 61: {fileID: 171869928}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +627,7 @@ GameObject:
   - 4: {fileID: 172040691}
   - 212: {fileID: 172040690}
   - 61: {fileID: 172040689}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -704,7 +704,7 @@ GameObject:
   - 4: {fileID: 174357354}
   - 212: {fileID: 174357353}
   - 61: {fileID: 174357352}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,7 +781,7 @@ GameObject:
   - 4: {fileID: 190214231}
   - 212: {fileID: 190214230}
   - 61: {fileID: 190214229}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -858,7 +858,7 @@ GameObject:
   - 4: {fileID: 193900847}
   - 212: {fileID: 193900846}
   - 61: {fileID: 193900845}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1025,7 +1025,7 @@ GameObject:
   - 4: {fileID: 211863347}
   - 212: {fileID: 211863346}
   - 61: {fileID: 211863345}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (75)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1102,7 +1102,7 @@ GameObject:
   - 4: {fileID: 225705865}
   - 212: {fileID: 225705864}
   - 61: {fileID: 225705863}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1179,7 +1179,7 @@ GameObject:
   - 4: {fileID: 271206898}
   - 212: {fileID: 271206897}
   - 61: {fileID: 271206896}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1256,7 +1256,7 @@ GameObject:
   - 4: {fileID: 311551479}
   - 212: {fileID: 311551478}
   - 61: {fileID: 311551477}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1395,7 +1395,7 @@ GameObject:
   - 4: {fileID: 346336061}
   - 212: {fileID: 346336060}
   - 61: {fileID: 346336059}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1472,7 +1472,7 @@ GameObject:
   - 4: {fileID: 385849215}
   - 212: {fileID: 385849214}
   - 61: {fileID: 385849213}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1549,7 +1549,8 @@ GameObject:
   - 4: {fileID: 403068833}
   - 212: {fileID: 403068832}
   - 61: {fileID: 403068831}
-  m_Layer: 0
+  - 61: {fileID: 403068834}
+  m_Layer: 10
   m_Name: pipeLeft (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1616,6 +1617,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1302755767}
   m_RootOrder: 2
+--- !u!61 &403068834
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 403068830}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.3, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2.8, y: 3.2}
 --- !u!1 &411601734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,7 +1642,7 @@ GameObject:
   - 212: {fileID: 411601736}
   - 61: {fileID: 411601735}
   - 252: {fileID: 411601738}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1721,7 +1736,7 @@ GameObject:
   - 4: {fileID: 488368107}
   - 212: {fileID: 488368106}
   - 61: {fileID: 488368105}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1902,7 +1917,7 @@ GameObject:
   - 4: {fileID: 517038458}
   - 212: {fileID: 517038457}
   - 61: {fileID: 517038456}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (66)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1979,7 +1994,7 @@ GameObject:
   - 4: {fileID: 575818998}
   - 212: {fileID: 575818997}
   - 61: {fileID: 575818996}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2226,7 +2241,7 @@ MonoBehaviour:
   portalOpenDown: 0
   thisPortal: {fileID: 595581292}
   othrPortal: {fileID: 0}
-  charInThisPortal: 0
+  isInPortal: 0
 --- !u!1 &612079801
 GameObject:
   m_ObjectHideFlags: 0
@@ -2237,7 +2252,7 @@ GameObject:
   - 4: {fileID: 612079804}
   - 212: {fileID: 612079803}
   - 61: {fileID: 612079802}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pipeRight (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2314,7 +2329,7 @@ GameObject:
   - 4: {fileID: 620607973}
   - 212: {fileID: 620607972}
   - 61: {fileID: 620607971}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (74)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2391,7 +2406,7 @@ GameObject:
   - 4: {fileID: 637001938}
   - 212: {fileID: 637001937}
   - 61: {fileID: 637001936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2468,7 +2483,7 @@ GameObject:
   - 4: {fileID: 644787985}
   - 212: {fileID: 644787984}
   - 61: {fileID: 644787983}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2545,7 +2560,7 @@ GameObject:
   - 4: {fileID: 656116012}
   - 212: {fileID: 656116011}
   - 61: {fileID: 656116010}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2622,7 +2637,7 @@ GameObject:
   - 4: {fileID: 665567123}
   - 212: {fileID: 665567122}
   - 61: {fileID: 665567121}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2761,7 +2776,7 @@ GameObject:
   - 4: {fileID: 671971699}
   - 212: {fileID: 671971698}
   - 61: {fileID: 671971697}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2979,7 +2994,7 @@ GameObject:
   - 4: {fileID: 716262495}
   - 212: {fileID: 716262494}
   - 61: {fileID: 716262493}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3121,7 +3136,7 @@ GameObject:
   - 212: {fileID: 784582165}
   - 61: {fileID: 784582164}
   - 252: {fileID: 784582167}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3292,7 +3307,7 @@ GameObject:
   - 4: {fileID: 796728251}
   - 212: {fileID: 796728250}
   - 61: {fileID: 796728249}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3369,7 +3384,7 @@ GameObject:
   - 4: {fileID: 797336099}
   - 212: {fileID: 797336098}
   - 61: {fileID: 797336097}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3524,7 +3539,7 @@ GameObject:
   - 212: {fileID: 821022630}
   - 61: {fileID: 821022629}
   - 252: {fileID: 821022632}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3618,7 +3633,7 @@ GameObject:
   - 4: {fileID: 857963231}
   - 212: {fileID: 857963230}
   - 61: {fileID: 857963229}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (78)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3695,7 +3710,7 @@ GameObject:
   - 4: {fileID: 861465423}
   - 212: {fileID: 861465422}
   - 61: {fileID: 861465421}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3772,7 +3787,7 @@ GameObject:
   - 4: {fileID: 862483864}
   - 212: {fileID: 862483863}
   - 61: {fileID: 862483862}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3849,7 +3864,7 @@ GameObject:
   - 4: {fileID: 863434903}
   - 212: {fileID: 863434902}
   - 61: {fileID: 863434901}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3926,7 +3941,7 @@ GameObject:
   - 4: {fileID: 865492390}
   - 212: {fileID: 865492389}
   - 61: {fileID: 865492388}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4003,7 +4018,7 @@ GameObject:
   - 4: {fileID: 865868931}
   - 212: {fileID: 865868930}
   - 61: {fileID: 865868929}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4142,7 +4157,7 @@ GameObject:
   - 4: {fileID: 895925647}
   - 212: {fileID: 895925646}
   - 61: {fileID: 895925645}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4219,7 +4234,7 @@ GameObject:
   - 4: {fileID: 898030982}
   - 212: {fileID: 898030981}
   - 61: {fileID: 898030980}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4296,7 +4311,7 @@ GameObject:
   - 4: {fileID: 903909860}
   - 212: {fileID: 903909859}
   - 61: {fileID: 903909858}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pipeRight (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4435,7 +4450,7 @@ GameObject:
   - 4: {fileID: 921166046}
   - 212: {fileID: 921166045}
   - 61: {fileID: 921166044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4512,7 +4527,7 @@ GameObject:
   - 4: {fileID: 927495490}
   - 212: {fileID: 927495489}
   - 61: {fileID: 927495488}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (79)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4589,7 +4604,7 @@ GameObject:
   - 4: {fileID: 961229333}
   - 212: {fileID: 961229332}
   - 61: {fileID: 961229331}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4728,7 +4743,7 @@ GameObject:
   - 4: {fileID: 970345483}
   - 212: {fileID: 970345482}
   - 61: {fileID: 970345481}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4883,7 +4898,7 @@ GameObject:
   - 212: {fileID: 1003643839}
   - 61: {fileID: 1003643838}
   - 252: {fileID: 1003643841}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5005,7 +5020,7 @@ MonoBehaviour:
   portalOpenDown: 0
   thisPortal: {fileID: 1011375171}
   othrPortal: {fileID: 1104831255}
-  charInThisPortal: 0
+  isInPortal: 0
 --- !u!61 &1011375169
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5076,7 +5091,7 @@ GameObject:
   - 4: {fileID: 1017310746}
   - 212: {fileID: 1017310745}
   - 61: {fileID: 1017310744}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5153,7 +5168,7 @@ GameObject:
   - 4: {fileID: 1018189244}
   - 212: {fileID: 1018189243}
   - 61: {fileID: 1018189242}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5307,7 +5322,8 @@ GameObject:
   - 4: {fileID: 1075407599}
   - 212: {fileID: 1075407598}
   - 61: {fileID: 1075407597}
-  m_Layer: 0
+  - 61: {fileID: 1075407600}
+  m_Layer: 9
   m_Name: pipeTopRight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5374,6 +5390,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1302755767}
   m_RootOrder: 6
+--- !u!61 &1075407600
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075407596}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 3.2, y: 3}
 --- !u!1 &1104831254
 GameObject:
   m_ObjectHideFlags: 0
@@ -5425,7 +5455,7 @@ MonoBehaviour:
   portalOpenDown: 0
   thisPortal: {fileID: 1104831255}
   othrPortal: {fileID: 1011375171}
-  charInThisPortal: 0
+  isInPortal: 0
 --- !u!61 &1104831257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5483,7 +5513,7 @@ GameObject:
   - 4: {fileID: 1173350927}
   - 212: {fileID: 1173350926}
   - 61: {fileID: 1173350925}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5560,7 +5590,7 @@ GameObject:
   - 4: {fileID: 1198318391}
   - 212: {fileID: 1198318390}
   - 61: {fileID: 1198318389}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5637,7 +5667,7 @@ GameObject:
   - 4: {fileID: 1210913247}
   - 212: {fileID: 1210913246}
   - 61: {fileID: 1210913245}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5714,7 +5744,7 @@ GameObject:
   - 4: {fileID: 1218952110}
   - 212: {fileID: 1218952109}
   - 61: {fileID: 1218952108}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5791,7 +5821,7 @@ GameObject:
   - 4: {fileID: 1225794886}
   - 212: {fileID: 1225794885}
   - 61: {fileID: 1225794884}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (77)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5868,7 +5898,7 @@ GameObject:
   - 4: {fileID: 1276019748}
   - 212: {fileID: 1276019747}
   - 61: {fileID: 1276019746}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5945,7 +5975,7 @@ GameObject:
   - 4: {fileID: 1284140269}
   - 212: {fileID: 1284140268}
   - 61: {fileID: 1284140267}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6022,7 +6052,7 @@ GameObject:
   - 4: {fileID: 1298260825}
   - 212: {fileID: 1298260824}
   - 61: {fileID: 1298260823}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6099,7 +6129,8 @@ GameObject:
   - 4: {fileID: 1302755767}
   - 212: {fileID: 1302755766}
   - 61: {fileID: 1302755765}
-  m_Layer: 0
+  - 61: {fileID: 1302755768}
+  m_Layer: 10
   m_Name: pipeLeft (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6173,6 +6204,20 @@ Transform:
   - {fileID: 1075407599}
   m_Father: {fileID: 0}
   m_RootOrder: 12
+--- !u!61 &1302755768
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302755764}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.3, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2.8, y: 3.2}
 --- !u!1 &1313598495
 GameObject:
   m_ObjectHideFlags: 0
@@ -6183,7 +6228,7 @@ GameObject:
   - 4: {fileID: 1313598498}
   - 212: {fileID: 1313598497}
   - 61: {fileID: 1313598496}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6260,7 +6305,7 @@ GameObject:
   - 4: {fileID: 1375707440}
   - 212: {fileID: 1375707439}
   - 61: {fileID: 1375707438}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6337,7 +6382,7 @@ GameObject:
   - 4: {fileID: 1422306729}
   - 212: {fileID: 1422306728}
   - 61: {fileID: 1422306727}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6571,7 +6616,7 @@ GameObject:
   - 4: {fileID: 1438419419}
   - 212: {fileID: 1438419418}
   - 61: {fileID: 1438419417}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6648,7 +6693,7 @@ GameObject:
   - 4: {fileID: 1443427533}
   - 212: {fileID: 1443427532}
   - 61: {fileID: 1443427531}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6725,7 +6770,7 @@ GameObject:
   - 4: {fileID: 1465899282}
   - 212: {fileID: 1465899281}
   - 61: {fileID: 1465899280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6802,7 +6847,7 @@ GameObject:
   - 4: {fileID: 1532466418}
   - 212: {fileID: 1532466417}
   - 61: {fileID: 1532466416}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pipeRight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6879,7 +6924,7 @@ GameObject:
   - 4: {fileID: 1567138731}
   - 212: {fileID: 1567138730}
   - 61: {fileID: 1567138729}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7033,7 +7078,7 @@ GameObject:
   - 4: {fileID: 1622359382}
   - 212: {fileID: 1622359381}
   - 61: {fileID: 1622359380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7235,7 +7280,7 @@ GameObject:
   - 212: {fileID: 1693262915}
   - 61: {fileID: 1693262914}
   - 252: {fileID: 1693262917}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7329,7 +7374,7 @@ GameObject:
   - 4: {fileID: 1696368994}
   - 212: {fileID: 1696368993}
   - 61: {fileID: 1696368992}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7406,7 +7451,7 @@ GameObject:
   - 4: {fileID: 1697692433}
   - 212: {fileID: 1697692432}
   - 61: {fileID: 1697692431}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7547,7 +7592,7 @@ GameObject:
   - 4: {fileID: 1721265095}
   - 212: {fileID: 1721265094}
   - 61: {fileID: 1721265093}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7625,7 +7670,7 @@ GameObject:
   - 212: {fileID: 1748799243}
   - 61: {fileID: 1748799242}
   - 252: {fileID: 1748799245}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7781,7 +7826,7 @@ GameObject:
   - 4: {fileID: 1810699420}
   - 212: {fileID: 1810699419}
   - 61: {fileID: 1810699418}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7858,7 +7903,7 @@ GameObject:
   - 4: {fileID: 1812843408}
   - 212: {fileID: 1812843407}
   - 61: {fileID: 1812843406}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7935,7 +7980,7 @@ GameObject:
   - 4: {fileID: 1812969990}
   - 212: {fileID: 1812969989}
   - 61: {fileID: 1812969988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (73)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8012,7 +8057,7 @@ GameObject:
   - 4: {fileID: 1815725117}
   - 212: {fileID: 1815725116}
   - 61: {fileID: 1815725115}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8089,7 +8134,9 @@ GameObject:
   - 4: {fileID: 1900511935}
   - 212: {fileID: 1900511934}
   - 61: {fileID: 1900511933}
-  m_Layer: 0
+  - 61: {fileID: 1900511937}
+  - 61: {fileID: 1900511936}
+  m_Layer: 9
   m_Name: pipeTopLeft (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8156,6 +8203,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1302755767}
   m_RootOrder: 0
+--- !u!61 &1900511936
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1900511932}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.1463257, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 3.2, y: 3}
+--- !u!61 &1900511937
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1900511932}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.3, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 3.2, y: 3}
 --- !u!1001 &1921532416
 Prefab:
   m_ObjectHideFlags: 0
@@ -8241,6 +8316,11 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114000014034271274, guid: 1b50d3dc8d88a43bdb96ee7608aaf1ff,
+        type: 2}
+      propertyPath: m_WhatIsGround.m_Bits
+      value: 1537
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1b50d3dc8d88a43bdb96ee7608aaf1ff, type: 2}
   m_IsPrefabParent: 0
@@ -8254,7 +8334,7 @@ GameObject:
   - 4: {fileID: 1955573193}
   - 212: {fileID: 1955573192}
   - 61: {fileID: 1955573191}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8331,7 +8411,8 @@ GameObject:
   - 4: {fileID: 1979478911}
   - 212: {fileID: 1979478910}
   - 61: {fileID: 1979478909}
-  m_Layer: 0
+  - 61: {fileID: 1979478912}
+  m_Layer: 10
   m_Name: pipeLeft (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8398,6 +8479,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1302755767}
   m_RootOrder: 4
+--- !u!61 &1979478912
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1979478908}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.3, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2.8, y: 3.2}
 --- !u!1 &1985757561
 GameObject:
   m_ObjectHideFlags: 0
@@ -8408,7 +8503,7 @@ GameObject:
   - 4: {fileID: 1985757564}
   - 212: {fileID: 1985757563}
   - 61: {fileID: 1985757562}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8562,7 +8657,7 @@ GameObject:
   - 4: {fileID: 2025170071}
   - 212: {fileID: 2025170070}
   - 61: {fileID: 2025170069}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (76)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8644,7 +8739,7 @@ GameObject:
   - 4: {fileID: 2047335732}
   - 212: {fileID: 2047335731}
   - 61: {fileID: 2047335730}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8785,7 +8880,7 @@ GameObject:
   - 4: {fileID: 2057528943}
   - 212: {fileID: 2057528942}
   - 61: {fileID: 2057528941}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8932,10 +9027,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71f4c83f1a9cec040849b8dd7611745f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bluePortal: {fileID: 1011375171}
-  orangePortal: {fileID: 1104831255}
+  bluePortal: {fileID: 1011375168}
+  orangePortal: {fileID: 1104831256}
   bluePortalColl: {fileID: 1011375169}
   orangePortalColl: {fileID: 1104831257}
+  vertColl: {fileID: 0}
+  horiColl: {fileID: 0}
   toHit:
     serializedVersion: 2
     m_Bits: 4294967035
@@ -8949,7 +9046,7 @@ GameObject:
   - 4: {fileID: 2101892596}
   - 212: {fileID: 2101892595}
   - 61: {fileID: 2101892594}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9026,7 +9123,7 @@ GameObject:
   - 4: {fileID: 2114299148}
   - 212: {fileID: 2114299147}
   - 61: {fileID: 2114299146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9103,7 +9200,7 @@ GameObject:
   - 4: {fileID: 2125539520}
   - 212: {fileID: 2125539519}
   - 61: {fileID: 2125539518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9180,7 +9277,7 @@ GameObject:
   - 4: {fileID: 2132863228}
   - 212: {fileID: 2132863227}
   - 61: {fileID: 2132863226}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
