@@ -63,7 +63,7 @@ public class Portal : MonoBehaviour
                 Vector3 temp = othrPortal.position;
                 temp.y = temp.y - 1;
                 player.position = new Vector3(temp.x, temp.y, temp.z);
-                playerRB.velocity = playerRB.transform.up * playerRB.velocity.magnitude;
+                playerRB.velocity = -1 * playerRB.transform.up * playerRB.velocity.magnitude;
             }
 
             if (other.portalOpenLeft)
@@ -73,14 +73,15 @@ public class Portal : MonoBehaviour
                 temp.x = temp.x - 1;
                 temp.y = temp.y + 1;
                 player.position = new Vector3(temp.x, temp.y, temp.z);
-                if (this.portalOpenDown)
+
+                //playerRB.AddForce(new Vector2(-500f * playerRB.velocity.y, 100f));
+                if (this.portalOpenUp || this.portalOpenDown)
                 {
-                    playerRB.AddForce(new Vector2(velAdjustment * playerRB.velocity.y, 300f));
+                    playerRB.velocity = -10 * playerRB.transform.right * Mathf.Abs(playerRB.velocity.y);
                 }
-                if (this.portalOpenLeft)
+                else
                 {
-                    //playerRB.AddForce(new Vector2(velAdjustment * playerRB.velocity.x, 700f));
-                    playerRB.velocity = -10 * playerRB.transform.right * playerRB.velocity.x;
+                    playerRB.velocity = -3.5f * playerRB.transform.right * Mathf.Abs(playerRB.velocity.x);
                 }
             }
 
@@ -91,16 +92,16 @@ public class Portal : MonoBehaviour
                 temp.x = temp.x + 1;
                 temp.y = temp.y + 1;
                 player.position = new Vector3(temp.x, temp.y, temp.z);
-                if (this.portalOpenDown)
-                {
-                    playerRB.AddForce(new Vector2(velAdjustment * playerRB.velocity.y, 300f));
-                }
-                if (this.portalOpenRight)
-                {
-                    //playerRB.AddForce(new Vector2(velAdjustment * playerRB.velocity.x, 700f));
-                    playerRB.velocity = -10 * playerRB.transform.right * playerRB.velocity.x;
 
+                //playerRB.AddForce(new Vector2(500f * playerRB.velocity.y, 100f));
+                if (this.portalOpenUp || this.portalOpenDown)
+                {
+                    playerRB.velocity = 10 * playerRB.transform.right * Mathf.Abs(playerRB.velocity.y);
                 }
+                else {
+                    playerRB.velocity = 3.5f * playerRB.transform.right * Mathf.Abs(playerRB.velocity.x);
+                }
+    
             }
         }
     }
