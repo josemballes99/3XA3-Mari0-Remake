@@ -24,8 +24,10 @@ public class Pause : MonoBehaviour {
 	void Update () {
 		if (isPaused) {
 			pauseCanvas.SetActive (false);
+			Time.timeScale = 1f;
 		} else {
 			pauseCanvas.SetActive (true);
+			Time.timeScale = 0f;
 		}
 
 		if (Input.GetKeyDown (KeyCode.P)) {
