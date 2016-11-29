@@ -25,12 +25,14 @@ public class Pause : MonoBehaviour {
 		if (isPaused) {
 			pauseCanvas.SetActive (false);
 			Time.timeScale = 1f;
+			AudioListener.pause = false;
 		} else {
 			pauseCanvas.SetActive (true);
 			Time.timeScale = 0f;
+			AudioListener.pause = true;
 		}
 
-		if (Input.GetKeyDown (KeyCode.P)) {
+		if (Input.GetKeyDown (KeyCode.P)||Input.GetKeyDown (KeyCode.Escape)) {
 			isPaused = !isPaused;
 		}
 	}
