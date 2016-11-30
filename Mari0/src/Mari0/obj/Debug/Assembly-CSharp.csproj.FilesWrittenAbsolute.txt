@@ -34,3 +34,20 @@
 /Users/josemiguelballesteros/Documents/3XA3/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Mono.Cecil.Mdb.dll
 /Users/josemiguelballesteros/Documents/3XA3/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Assembly-CSharp.dll.mdb
 /Users/josemiguelballesteros/Documents/3XA3/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/obj/Debug/Assembly-CSharp.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/UnityEngine.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/UnityEditor.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Mono.Cecil.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Unity.DataContract.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/davidhobson/Documents/Software Engineering/Third Year/First Semester/3XA3/Ninetendo/ninetendo/Mari0/src/Mari0/Temp/bin/Debug/Assembly-CSharp.dll

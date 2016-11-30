@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: 2c32ef265e75b634ea13835f10d97e76
 labels:
 - Ground
-timeCreated: 1476836408
+timeCreated: 1480463358
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -1154,10 +1154,10 @@ TextureImporter:
       name: smbtiles_77
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 85
-        height: 16
+        x: 34
+        y: 0
+        width: 16
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
