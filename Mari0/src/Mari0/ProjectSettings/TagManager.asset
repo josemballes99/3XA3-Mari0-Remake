@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Portable
   - Orange Portal
+  - Pickup
   layers:
   - Default
   - TransparentFX

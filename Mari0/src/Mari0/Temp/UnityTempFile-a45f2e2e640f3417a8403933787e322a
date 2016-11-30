@@ -10,7 +10,7 @@
 -r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll'
 -define:UNITY_5_3_OR_NEWER
 -define:UNITY_5_4_OR_NEWER
--define:UNITY_5_4_2
+-define:UNITY_5_4_1
 -define:UNITY_5_4
 -define:UNITY_5
 -define:ENABLE_NEW_BUGREPORTER
@@ -86,7 +86,9 @@
 -define:UNITY_TEAM_LICENSE
 -define:CROSS_PLATFORM_INPUT
 'Assets/Scripts/Camera2DFollow.cs'
+'Assets/Scripts/Dead.cs'
 'Assets/Scripts/EnemyAI.cs'
+'Assets/Scripts/LifeCount.cs'
 'Assets/Scripts/Lives.cs'
 'Assets/Scripts/MainMenu.cs'
 'Assets/Scripts/Pause.cs'

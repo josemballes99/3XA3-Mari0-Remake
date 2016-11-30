@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UnityStandardAssets._2D
 {
@@ -18,6 +19,15 @@ namespace UnityStandardAssets._2D
         private Animator m_Anim;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+		private int count;
+		public Text countText;
+		public Sprite emptyBlock;
+		public AudioClip collectSound;
+
+		void Start(){
+			count = 0;
+			countText.text = "SCORE:   " + count.ToString();
+		}
 
         private void Awake()
         {
@@ -95,5 +105,17 @@ namespace UnityStandardAssets._2D
             theScale.x *= -1;
             transform.localScale = theScale;
         }
+
+		void OnTriggerEnter2D(Collider2D other){
+			if (other.gameObject.CompareTag("Pickup") && !other.GetComponent<SpriteRenderer>().sprite.Equals(emptyBlock)){
+				count = count + 10;
+				countText.text = "SCORE:   " + count.ToString();
+				AudioSource.PlayClipAtPoint(collectSound, transform.position);
+
+			} else if (other.gameObject.CompareTag("Enemy")){
+				count = count + 50;
+				countText.text = "SCORE:   " + count.ToString();
+			}
+		}
     }
 }
