@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 OCT 2016 23:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  7 DEC 2016 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -217,7 +217,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks18
 \@floatcapt=\box27
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 14.
+Package hyperref Info: Option `colorlinks' set `true' on input line 15.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
@@ -238,20 +238,20 @@ Package color Info: Driver file: pdftex.def on input line 144.
 (./SRS.aux)
 \openout1 = `SRS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -282,7 +282,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 30.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -292,18 +292,18 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count111
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
 (./SRS.out) (./SRS.out)
 \@outlinefile=\write3
 \openout3 = `SRS.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 32.
+(Font)              <14.4> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 32.
+(Font)              <7> on input line 33.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./SRS.
@@ -327,17 +327,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout6 = `SRS.lof'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
 []|\OT1/cmr/m/n/12 October 11,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
 []|\OT1/cmr/m/n/12 October 11,
  []
 
 
-Underfull \hbox (badness 7851) in paragraph at lines 47--47
+Underfull \hbox (badness 7851) in paragraph at lines 48--48
 []|\OT1/cmr/m/n/12 Finished Project Drivers and Non-
  []
 
@@ -346,20 +346,20 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.50 \newpage
+l.51 \newpage
              ]
 
 Package natbib Warning: Citation `RobertsonAndRobertson2012' on page 1 undefine
-d on input line 56.
+d on input line 57.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 80.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 81.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 80.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
 
-Overfull \hbox (95.89662pt too wide) in paragraph at lines 89--108
+Overfull \hbox (85.94395pt too wide) in paragraph at lines 90--106
 [][] 
  []
 
@@ -367,19 +367,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \end{table}
+l.106 \end{table}
                   [1] <Fig1.png, id=227, 423.5825pt x 287.0725pt>
 File: Fig1.png Graphic file (type png)
 
 <use Fig1.png>
-Package pdftex.def Info: Fig1.png used on input line 123.
+Package pdftex.def Info: Fig1.png used on input line 121.
 (pdftex.def)             Requested size: 216.81pt x 146.93506pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (85.29411pt too wide) in paragraph at lines 131--164
+Overfull \hbox (85.29411pt too wide) in paragraph at lines 129--162
 [][] 
  []
 
@@ -388,50 +388,45 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.165 
+l.163 
       ] [3pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.165 
+l.163 
        <./Fig1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 168--205
+Underfull \hbox (badness 10000) in paragraph at lines 166--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--205
+Underfull \hbox (badness 10000) in paragraph at lines 166--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--205
+Underfull \hbox (badness 10000) in paragraph at lines 166--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--205
+Underfull \hbox (badness 10000) in paragraph at lines 166--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--205
+Underfull \hbox (badness 10000) in paragraph at lines 166--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--205
+Underfull \hbox (badness 10000) in paragraph at lines 166--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--205
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--205
+Underfull \hbox (badness 10000) in paragraph at lines 166--197
 
  []
 
@@ -440,18 +435,28 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.205 
+l.197 
       ]
+Underfull \hbox (badness 10000) in paragraph at lines 200--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--207
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 208--211
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 212--215
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 216--219
 
  []
@@ -476,12 +481,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--235
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 240--243
 
  []
@@ -496,59 +501,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--251
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--255
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--259
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--263
-
- []
-
 [7] [8] [9] [10]
 No file SRS.bbl.
-[11] [12]
-Overfull \hbox (15.06747pt too wide) in paragraph at lines 386--388
+[11]
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
+
+Overfull \hbox (15.06747pt too wide) in paragraph at lines 374--376
 \OT1/cmr/m/n/12 The def-i-ni-tion of the re-quire-ments will likely call for SY
 M-BOLIC[]CONSTANTS.
  []
 
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
-[13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
+[12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
  (./SRS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
 Package rerunfilecheck Info: File `SRS.out' has not changed.
 (rerunfilecheck)             Checksum: 167BF8705F5C5FE9DC79F1F5ECB00F2C;2691.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 390.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 376.
  ) 
 Here is how much of TeX's memory you used:
- 5806 strings out of 493014
- 84879 string characters out of 6133351
+ 5804 strings out of 493014
+ 84865 string characters out of 6133351
  175162 words of memory out of 5000000
  9201 multiletter control sequences out of 15000+600000
  9155 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,10n,28p,585b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,10n,28p,585b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on SRS.pdf (16 pages, 109101 bytes).
+Output written on SRS.pdf (15 pages, 108563 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
- 326 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
+ 350 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
  310 words of extra memory for PDF output out of 10000 (max. 10000000)
 
