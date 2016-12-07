@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class Pause : MonoBehaviour {
 
@@ -14,7 +16,7 @@ public class Pause : MonoBehaviour {
 	public bool isDead;
 
 	public void Home(){
-		Application.LoadLevel (mainMenu);
+		SceneManager.LoadScene("MainMenu");
 	}
 
 	IEnumerator WaitDead() {
@@ -57,8 +59,11 @@ public class Pause : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.gameObject.CompareTag("Player")){
-			isDead = true;
-		}
+      //  if(other.gameObject.transform.position.y > 6.5) {
+            SceneManager.LoadScene("Level1");
+            isDead = true;
+       // }
+        
+		
 	}
 }

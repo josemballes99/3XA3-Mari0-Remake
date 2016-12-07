@@ -4,13 +4,15 @@ using UnityEngine.SceneManagement;
 
 namespace UnityStandardAssets._2D
 {
-    public class Restarter : MonoBehaviour
+    public class WinCondition : MonoBehaviour
     {
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.tag == "Player")
             {
-                SceneManager.LoadScene(SceneManager.GetSceneAt(0).path);
+
+                SceneManager.LoadScene("Win");
+
             }
         }
     }

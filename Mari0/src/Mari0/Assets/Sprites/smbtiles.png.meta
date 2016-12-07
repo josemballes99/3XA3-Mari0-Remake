@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: 2c32ef265e75b634ea13835f10d97e76
 labels:
 - Ground
-timeCreated: 1480463358
+timeCreated: 1480505982
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -35,9 +35,9 @@ TextureImporter:
     21300052: smbtiles_26
     21300054: smbtiles_27
     21300056: smbtiles_28
-    21300058: smbtiles_29
-    21300060: smbtiles_30
-    21300062: smbtiles_31
+    21300058: castleTop
+    21300060: castleDoorTop
+    21300062: castleWall
     21300064: smbtiles_32
     21300066: cloud1botl
     21300068: cloud1bot
@@ -50,9 +50,9 @@ TextureImporter:
     21300082: smbtiles_41
     21300084: smbtiles_42
     21300086: smbtiles_43
-    21300088: smbtiles_44
-    21300090: smbtiles_45
-    21300092: smbtiles_46
+    21300088: castleWindowLeft
+    21300090: castleDoorBot
+    21300092: castleWindowRight
     21300094: smbtiles_47
     21300096: smbtiles_48
     21300098: smbtiles_49
@@ -527,7 +527,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: smbtiles_29
+      name: castleTop
       rect:
         serializedVersion: 2
         x: 0
@@ -540,20 +540,20 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: smbtiles_30
+      name: castleDoorTop
       rect:
         serializedVersion: 2
         x: 17
-        y: 52
+        y: 51
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: smbtiles_31
+      name: castleWall
       rect:
         serializedVersion: 2
         x: 34
@@ -722,7 +722,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: smbtiles_44
+      name: castleWindowLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -735,7 +735,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: smbtiles_45
+      name: castleDoorBot
       rect:
         serializedVersion: 2
         x: 17
@@ -748,7 +748,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: smbtiles_46
+      name: castleWindowRight
       rect:
         serializedVersion: 2
         x: 34

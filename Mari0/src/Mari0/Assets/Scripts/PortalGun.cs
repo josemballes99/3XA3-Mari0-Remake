@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PortalGun : MonoBehaviour {
+public class PortalGun : MonoBehaviour
+{
 
     public Portal bluePortal;
     public Portal orangePortal;
@@ -17,10 +18,6 @@ public class PortalGun : MonoBehaviour {
 
     private Transform gunPoint;
 
-    // Keep track of portal position
-
-
-
     void Shoot(int portalColor) // 0 shoots a blue portal. 1 shoots an orange portal
     {
         // Gets mouse x and y coords
@@ -34,15 +31,15 @@ public class PortalGun : MonoBehaviour {
 
         RaycastHit2D hit = Physics2D.Raycast(gunPointPos, aimDirection, 100, toHit);
 
-        if (portalColor == 0)
+        if (portalColor == 0)   // If shooting blue portal
         {
             Debug.DrawLine(gunPointPos, aimDirection * 100, Color.blue);
             if (hit.collider != null)
             {
-                if (hit.collider.gameObject.layer == 9)
+                GameObject.Find("Orange Portal").GetComponent<Collider2D>().isTrigger = true;
+                if (hit.collider.gameObject.layer == 9) // Check if surface is considered horizontal
                 {
-                    bluePortalColl.enabled = true;
-                    bluePortal.thisPortal.position = new Vector3(hit.point.x-0.8f, hit.point.y, 0);
+                    bluePortal.thisPortal.position = new Vector3(hit.point.x - 0.8f, hit.point.y, 0);
                     bluePortal.thisPortal.localEulerAngles = new Vector3(0f, 0f, 0f);
                     // set booleans
                     if (aimDirection.y < 0)
@@ -60,9 +57,8 @@ public class PortalGun : MonoBehaviour {
                         bluePortal.portalOpenLeft = false;
                     }
                 }
-                if (hit.collider.gameObject.layer == 10)
+                if (hit.collider.gameObject.layer == 10)    // Check if surface is consdered vertical
                 {
-                    bluePortalColl.enabled = true;
                     bluePortal.thisPortal.position = new Vector3(hit.point.x, hit.point.y - 0.8f, 0);    // Vertical portal, offset transform so center of portal is where player aimed at
                     bluePortal.thisPortal.localEulerAngles = new Vector3(0f, 0f, 90f);
                     // Check portal orientation. Is this portal facing left or right?
@@ -81,21 +77,18 @@ public class PortalGun : MonoBehaviour {
                         bluePortal.portalOpenLeft = true;
                     }
                 }
-                
+
             }
         }
 
-        else if (portalColor == 1)
+        else if (portalColor == 1)  // If shooting orange portal
         {
             Debug.DrawLine(gunPointPos, aimDirection * 100, Color.yellow);
             if (hit.collider != null)
             {
-
-
-
-                if (hit.collider.gameObject.layer == 9)
+                GameObject.Find("Blue Portal").GetComponent<Collider2D>().isTrigger = true;
+                if (hit.collider.gameObject.layer == 9) // Check if surface is considered horizontal
                 {
-                    orangePortalColl.enabled = true;
                     orangePortal.thisPortal.position = new Vector3(hit.point.x - 0.8f, hit.point.y, 0);
                     orangePortal.thisPortal.localEulerAngles = new Vector3(0f, 0f, 0f);
                     // set booleans
@@ -114,9 +107,8 @@ public class PortalGun : MonoBehaviour {
                         orangePortal.portalOpenLeft = false;
                     }
                 }
-                if (hit.collider.gameObject.layer == 10)
+                if (hit.collider.gameObject.layer == 10)    // Check if surface is considered vertical
                 {
-                    orangePortalColl.enabled = true;
                     orangePortal.thisPortal.position = new Vector3(hit.point.x, hit.point.y - 0.8f, 0);    // Vertical portal, offset transform so center of portal is where player aimed at
                     orangePortal.thisPortal.localEulerAngles = new Vector3(0f, 0f, 90f);
                     // Check portal orientation. Is this portal facing left or right?
@@ -148,19 +140,21 @@ public class PortalGun : MonoBehaviour {
 
     }
 
-	// Use this for initialization
-	void Start () {
-        bluePortalColl.enabled = false;
-        orangePortalColl.enabled = false;
-	}
+    // Use this for initialization
+    void Start()
+    {
+        GameObject.Find("Blue Portal").GetComponent<Collider2D>().isTrigger = false;
+        GameObject.Find("Orange Portal").GetComponent<Collider2D>().isTrigger = false;
+    }
 
     void Awake()
     {
         gunPoint = transform.FindChild("GunPoint");
     }
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update()
+    {
         Shoot(3);   // Calls the shoot function repeatedly to give player a line to help them aim
         if (Input.GetMouseButtonDown(0))    // Check if LMB is pressed. Will shoot blue portal
         {
@@ -170,7 +164,7 @@ public class PortalGun : MonoBehaviour {
         {
             Shoot(1);
         }
-	}
+    }
 
     void FixedUpdate()
     {

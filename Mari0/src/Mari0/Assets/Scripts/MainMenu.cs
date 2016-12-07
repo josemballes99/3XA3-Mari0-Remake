@@ -15,10 +15,6 @@ public class MainMenu : MonoBehaviour {
 		Application.LoadLevel (startLevel);
 	}
 
-	public void Settings(){
-		Application.LoadLevel (settingsLevel);
-	}
-
 	public void Help(){
 		Application.LoadLevel (helpLevel);
 	}

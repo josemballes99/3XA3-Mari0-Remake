@@ -3,6 +3,7 @@ using System.Collections;
 
 public class EnemyAI : MonoBehaviour {
 
+    public bool isKilled;
 	public float walkSpeed = 2.0f;
 	public float wallLeft = 22.0f;
 	public float wallRight = 48.0f;
