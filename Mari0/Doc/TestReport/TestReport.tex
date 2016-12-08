@@ -1,0 +1,92 @@
+\documentclass[12pt, titlepage]{article}
+
+\usepackage[pdftex]{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{float}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=red,
+    urlcolor=blue
+}
+\usepackage[round]{natbib}
+
+\title{SE 3XA3: Test Report\\Title of Project}
+
+\author{Team \#, Team Name
+		\\ Student 1 name and macid
+		\\ Student 2 name and macid
+		\\ Student 3 name and macid
+}
+
+\date{\today}
+
+\input{../Comments}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+\listoffigures
+
+\newpage
+
+\pagenumbering{arabic}
+
+\section{Functional Requirements Evaluation}
+
+\subsection{Input Testing}
+
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[scale=0.8]{Table1.png} % requires the graphicx package
+   \label{fig:table1}
+\end{figure}
+
+
+\subsection{Collision Testing}
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[scale=0.85]{Table2.png} % requires the graphicx package
+   \label{fig:table2}
+\end{figure}
+
+
+
+\section{Nonfunctional Requirements Evaluation}
+
+\subsection{Usability}
+		
+\subsection{Performance}
+
+\subsection{etc.}
+	
+\section{Comparison to Existing Implementation}	
+
+This section will not be appropriate for every project.
+
+\section{Unit Testing}
+
+\section{Changes Due to Testing}
+
+\section{Automated Testing}
+		
+\section{Trace to Requirements}
+		
+\section{Trace to Modules}		
+
+\section{Code Coverage Metrics}
+
+\bibliographystyle{plainnat}
+
+\bibliography{SRS}
+
+\end{document}
