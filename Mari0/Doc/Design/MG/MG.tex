@@ -50,12 +50,13 @@
 \listoftables
 \listoffigures
 
-\begin{table}[bp]
+\begin{table}[h]
 \caption{\bf Revision History}
 \begin{tabularx}{\textwidth}{p{3cm}p{2cm}X}
 \toprule {\bf Date} & {\bf Version} & {\bf Notes}\\
 \midrule
-2016-11-13 & 1.0 & Creation of rev0\\
+2016-11-13 & 1.0 & Creation of Design Document. Added Introduction. Added Anticipated and Unlikely Changes. Added Module Hierarchy. Added Connection Between Requirements and Design. Added Module Decomposition. Added Traceability Matrix. Added Use Hierarchy Between Modules.\\\\
+2016-11-29 & 1.1 & Updated Module Decomposition. Fixed Spelling Errors. Updated Traceability Matrix for Anticipated Changes and Modules. Updated Traceability Matrix for Requirements and Modules.\\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -73,9 +74,9 @@ based on the principle of information hiding~\citep{Parnas1972a}.  This
 principle supports design for change, because the ``secrets'' that each module
 hides represent likely future changes.  Design for change is valuable in SC,
 where modifications are frequent, especially during initial development as the
-solution space is explored.  
+solution space is explored.\\  
 
-Our design follows the rules layed \textcolor{red}{should this be laid? - CM} \\ out by \citet{ParnasEtAl1984}, as follows:
+Our design follows the rules laid out by \citet{ParnasEtAl1984}, as follows:
 \begin{itemize}
 \item System details that are likely to change independently should be the
   secrets of separate modules.
@@ -126,7 +127,7 @@ Some of the changes below are what we believe will be implemented as development
 
 \begin{description}
 \item[\refstepcounter{acnum} \actheacnum \label{acEnvironments}:] Level Environments. All of the levels that will be created will be unique and making sure that game objects interact properly is crucial.
-\item[\refstepcounter{acnum} \actheacnum \label{acEnemiest}:] Types of Enemies. Adding new enemies in the game is expected and is considered in the design.
+\item[\refstepcounter{acnum} \actheacnum \label{acEnemies}:] Types of Enemies. Adding new enemies in the game is expected and is considered in the design.
 \item [\refstepcounter{acnum} \actheacnum \label{acOperatingSys}:] Operating System. All operating systems will be supported and allowing the software to be dynamic and run on these systems is important.
 \item [\refstepcounter{acnum} \actheacnum \label{acMusic}:] Music and Sound Effects. These will be changed based off of different environmental factors of the game.
 \end{description}
@@ -153,7 +154,7 @@ actually be implemented.
 \item  [\refstepcounter{mnum} \mthemnum \label{mMI}:] Mouse Input Module
 \item  [\refstepcounter{mnum} \mthemnum \label{mKI}:] Keyboard Input Module
 \item  [\refstepcounter{mnum} \mthemnum \label{mInput}:] Input Format Module
-\item  [\refstepcounter{mnum} \mthemnum \label{mPP}:] Portal Phyiscs \textcolor{red}{Typo - CM} \\ Module
+\item  [\refstepcounter{mnum} \mthemnum \label{mPP}:] Portal Physics Module
 \item  [\refstepcounter{mnum} \mthemnum \label{mPG}:] Portal Gun Module
 \item  [\refstepcounter{mnum} \mthemnum \label{mGO}:] Game Object Module
 \item  [\refstepcounter{mnum} \mthemnum \label{mPO}:] Player Object Module
@@ -177,10 +178,10 @@ actually be implemented.
 & Event Input Module\\
 & Interface Module\\
 & Sprite/Model Module\\
+& Portal Physics Module\\
 \midrule
 
 \multirow{3}{0.3\textwidth}{Software Decision Module}
-& Portal Physics Module \textcolor{red}{If this pertains to your SRS, it does not belong here. Move up one cell. - CM} \\\\
 & Game Object Module\\
 & Player Object Module\\
 \bottomrule
@@ -228,7 +229,7 @@ selected.
 \subsubsection{Mouse Inputs (\mref{mMI})}
 
 \begin{description}
-\item[Secrets:] How mouse input is used in relation to the computer \textcolor{red}{These should be nouns! - CM} \\
+\item[Secrets:] X and Y coordinates of Mouse
 \item[Services:] Player mouse inputs are displayed on-screen 
 \item[Implemented By:] OS
 \end{description}
@@ -236,7 +237,7 @@ selected.
 \subsubsection{Keyboard Inputs (\mref{mKI})}
 
 \begin{description}
-\item[Secrets:] How keyboard input is used in relation to the computer
+\item[Secrets:] Keys Pressed
 \item[Services:] Player keyboard inputs are displayed on-screen 
 \item[Implemented By:] OS
 \end{description}
@@ -244,16 +245,6 @@ selected.
 
 
 \subsection{Behaviour-Hiding Module}
-
-\begin{description}
-\item[Secrets:]The contents of the required behaviours.
-\item[Services:]Includes programs that provide externally visible behaviour of
-  the system as specified in the software requirements specification (SRS)
-  documents. This module serves as a communication layer between the
-  hardware-hiding module and the software decision module. The programs in this
-  module will need to change if there are changes in the SRS.
-\item[Implemented By:] --
-\end{description}
 
 \subsubsection{Input Format Module (\mref{mInput})}
 
@@ -273,7 +264,7 @@ selected.
 
 \subsubsection{Portal Gun Module (\mref{mPG})}
 \begin{description}
-\item[Secrets:] The coordinates of both the blue and the orange portal, and the coordinates of the surface the player is aiming at \textcolor{red}{If this requires to things, the module should be split. Or reword to just have one thing - CM} \\
+\item[Secrets:] The coordinates of both the blue and the orange portal on a surface
 \item[Services:] Allows the player to aim and place either a blue portal or an orange portal on a surface
 \item[Implemented By:] Mari0
 \end{description}
@@ -294,17 +285,6 @@ selected.
 
 \subsection{Software Decision Module}
 
-\begin{description}
-\item[Secrets:] The design decision based on mathematical theorems, physical
-  facts, or programming considerations. The secrets of this module are
-  \emph{not} described in the SRS.
-\item[Services:] Includes data structure and algorithms used in the system that
-  do not provide direct interaction with the user. 
-  % Changes in these modules are more likely to be motivated by a desire to
-  % improve performance than by externally imposed changes.
-\item[Implemented By:] --
-\end{description}
-
 \subsubsection{Sprite/Model Module (\mref{mSM})}
 \begin{description}
 \item[Secrets:]How sprites and models are displayed in game
@@ -319,9 +299,9 @@ selected.
 \item[Implemented By:] Mari0
 \end{description}
 
-\subsubsection{Collision Detectionl Module (\mref{mCD}) \textcolor{red}{Typo - CM} \\}
+\subsubsection{Collision Detection Module (\mref{mCD})}
 \begin{description}
-\item[Secrets:]How collision is calculated \textcolor{red}{Noun! Just say, Collision Mechanics - CM} \\
+\item[Secrets:]Collision Mechanics
 \item[Services:]Determines whether two entities in the game are touching or will eventually touch one another
 \item[Implemented By:] Mari0
 \end{description}
@@ -339,17 +319,19 @@ requirements and between the modules and the anticipated changes.
 \toprule
 \textbf{Req.} & \textbf{Modules}\\
 \midrule
-R1 & \mref{mHH}, \mref{mInput}, \mref{mParams}, \mref{mControl}\\
-R2 & \mref{mInput}, \mref{mParams}\\
-R3 & \mref{mVerify} \textcolor{red}{These aren't labelled anywhere... Did you not remove these? - CM} \\\\
-R4 & \mref{mOutput}, \mref{mControl}\\
-R5 & \mref{mOutput}, \mref{mODEs}, \mref{mControl}, \mref{mSeqDS}, \mref{mSolver}, \mref{mPlot}\\
-R6 & \mref{mOutput}, \mref{mODEs}, \mref{mControl}, \mref{mSeqDS}, \mref{mSolver}, \mref{mPlot}\\
-R7 & \mref{mOutput}, \mref{mEnergy}, \mref{mControl}, \mref{mSeqDS}, \mref{mPlot}\\
-R8 & \mref{mOutput}, \mref{mEnergy}, \mref{mControl}, \mref{mSeqDS}, \mref{mPlot}\\
-R9 & \mref{mVerifyOut}\\
-R10 & \mref{mOutput}, \mref{mODEs}, \mref{mControl}\\
-R11 & \mref{mOutput}, \mref{mODEs}, \mref{mEnergy}, \mref{mControl}\\
+R1 & \mref{mHH}, \mref{mKI}, \mref{mInput}, \mref{mInterface}\\
+R2 & \mref{mKI}, \mref{mInput}, \mref{mInterface}\\
+R3 & \mref{mKI}, \mref{mInterface}\\
+R4 & \mref{mSM}, \mref{mInterface}\\
+R5 & \mref{mMI}, \mref{mPP}, \mref{mPG}, \mref{mGO}, \mref{mPO}, \mref{mCD}\\
+R6 & \mref{mKI}, \mref{mPO}, \mref{mSM}, \mref{mCD}, \mref{mPlot}\\
+R7 & \mref{mKI}, \mref{mPO}, \mref{mCD}\\
+R8 & \mref{mGO}, \mref{mPO}, \mref{mSMl}, \mref{mCD}\\
+R9 & \mref{mGO}, \mref{mSM}, \mref{mCD}\\
+R10 & \mref{mGO}, \mref{mPO}, \mref{mSM}, \mref{mCD}\\
+R11 & \mref{mGO}, \mref{mPO}, \mref{mSM}, \mref{mCD}\\
+R12 & \mref{mPO}\\
+R13 & \mref{mGO}, \mref{mPO}, \mref{mInterface}\\
 \bottomrule
 \end{tabular}
 \caption{Trace Between Requirements and Modules}
@@ -362,18 +344,10 @@ R11 & \mref{mOutput}, \mref{mODEs}, \mref{mEnergy}, \mref{mControl}\\
 \toprule
 \textbf{AC} & \textbf{Modules}\\
 \midrule
-\acref{acHardware} & \mref{mHH}\\
-\acref{acInput} & \mref{mInput}\\
-\acref{acParams} & \mref{mParams}\\
-\acref{acVerify} & \mref{mVerify}\\
-\acref{acOutput} & \mref{mOutput}\\
-\acref{acVerifyOut} & \mref{mVerifyOut}\\
-\acref{acODEs} & \mref{mODEs}\\
-\acref{acEnergy} & \mref{mEnergy}\\
-\acref{acControl} & \mref{mControl}\\
-\acref{acSeqDS} & \mref{mSeqDS}\\
-\acref{acSolver} & \mref{mSolver}\\
-\acref{acPlot} & \mref{mPlot}\\
+\acref{acEnvironments} & \mref{mPP}, \mref{mGO}, \mref{mSM}\\
+\acref{acEnemies} & \mref{mGO}, \mref{mPO}, \mref{mSM}, \mref{mInterface}, \mref{mCD}\\
+\acref{acOperatingSys} & \mref{mHH}, \mref{mMI}, \mref{mKI}, \mref{mInput}\\
+\acref{acMusic} & \mref{mGO}\\
 \bottomrule
 \end{tabular}
 \caption{Trace Between Anticipated Changes and Modules}
