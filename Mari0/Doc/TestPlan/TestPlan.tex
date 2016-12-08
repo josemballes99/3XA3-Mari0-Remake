@@ -31,15 +31,16 @@
 \pagenumbering{roman}
 \tableofcontents
 \listoftables
-\listoffigures
 
-\begin{table}[bp]
+\begin{table}[h]
 \caption{\bf Revision History}
 \begin{tabularx}{\textwidth}{p{3cm}p{2cm}X}
 \toprule {\bf Date} & {\bf Version} & {\bf Notes}\\
 \midrule
-2016-10-31 & 1.0 & Created document\\
-Date 2 & 1.1 & Notes\\
+2016-10-28 & 1.0 & Created document\\
+2016-10-29 & 1.1 & Added General Information. Added Plan. Added System Test Description. Added Tests for Proof of Concept. Added Comparison to Existing Implementation. Added Unit Testing Plan. Added Appendix\\
+2016-11-28 & 1.2 & Updated Document Description. Updated Table of Definitions. Updated tests for functional requirements. Updated Object Collision Testing. \\
+2016-12-06 & 1.3 & Added Manual Testing Approach. Updated Automated Testing Approach. Updated Gantt chart to reflect testing. Updated Non-Functional Requirements. Updated Survey.\\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -47,15 +48,14 @@ Date 2 & 1.1 & Notes\\
 \newpage
 
 \pagenumbering{arabic}
-\textcolor{red}{The suspense is killing me... - CM} \\
-This document ...
+This document will show the different requirements will be testing and the rationale behind some of the tests that we choose. Furthermore, this document will show what will be demonstrating along with how the tests will be conducted. 
 
 \section{General Information}
 
 \subsection{Purpose}
 Testing is a critical part of developing software to both ensure the program meets the project's requirements and to address the errors of the product. 
 \subsection{Scope}
-In regard to our project, the game Mari0, the tests implemented will need to be carefully chosen in order to ensure that the game is above all else, fun. The chosen tests must also give the stakeholders of the project the assurance and confidence that the game plays and functions accordingly to the requirements outlined in the Software Requirements Specification (SRS) document. Testing will be automated where possible, however it is a necessity to test for certain attributes of the gamemanually.
+In regard to our project, the game Mari0, the tests implemented will need to be carefully chosen in order to ensure that the game is above all else, fun. The chosen tests must also give the stakeholders of the project the assurance and confidence that the game plays and functions accordingly to the requirements outlined in the Software Requirements Specification (SRS) document. Testing will be automated where possible, however it is a necessity to test for certain attributes of the game manually.
 \subsection{Acronyms, Abbreviations, and Symbols}
 	
 \begin{table}[hbp]
@@ -83,18 +83,12 @@ Term			& Definition \\
 \hline
 Mario      		 & The character that the player portrays  \\
 Portals      		 & Two connected portals that allow characters and projectiles to \\
-			 & enter one and exit through the other, whilst mainting physial \\
+			 & enter one and exit through the other, whilst maintaining physics \\
 			 & properties such as velocity and acceleration \\
 Goomba		 & Enemy character that is defeated after the player stomps on the top \\
 			 & of its head	  \\
-Koopa Troopa	 & Enemy character that is defeated after the player stomps on \\
-			 & the top of its head; leaves behind a shell that can be used as a projectile	\\
 Lives			 & The amount of times the player can die before game over	\\
 Question Block	 & Blocks found that when hit give the player coins or power ups	\\
-Super Mushroom	 & Type of power up, lets Mario take an extra hit from enemies	\\
-Fire Flower		 & Type of power up, gives Mario the ability to throw fireballs	\\
-Time Limit		 & The amount of time in seconds the player has left complete the \\
-			 & level before losing a life and restarting the level	\\
 Score			 & The amount of points a player has obtained by collecting coins \\
 			 & or killing enemy characters	\\
 \hline
@@ -110,7 +104,9 @@ The core game mechanics of Mari0 involve the simple platforming mechanics of mov
 \subsection{Test Team}
 All members of Ninetendo, David Hobson, Jose Miguel Ballesteros, and Jeff Pineda, are to actively create and implement tests and test cases, and are also responsible for recording each tests' results.
 \subsection{Automated Testing Approach}
-If a method being written can be tested automatically, the test will be concurrently written alongside it or shortly after the method's completion. 
+If a method being written can be tested automatically, the test will be concurrently written alongside it or shortly after the method's completion. In addition, in order to ensure that all code has been tested effectively, white box testing will be used. 
+\subsection{Manual Testing Approach}
+Many of the manual tests will be done by players/beta testers to ensure that the game reacts accordingly. A black box testing approach will be used for beta testing when users play our game and will ensure that outputs make sense for the game. 
 \subsection{Testing Tools}
 As mentioned in the technology section of our Development Plan document, we will be using the NUnit framework to conduct our unit tests. Manual testing will be done in the Unity play mode interface.
 \subsection{Testing Schedule}
@@ -195,7 +191,7 @@ Output: The character will be moving towards the left at a constant speed
 
 Tester(s): Development Team and Colleagues
 
-Description: The tester will make sure that the character?s movement functions as expected
+Description: The tester will make sure that the character's movement functions as expected
 
 \item{Stop (Starting from moving right)\\}
 
@@ -337,20 +333,6 @@ Tester(s): Development Team and Colleagues
 
 Description: The tester checks to see if they can view the help menu
 
-\item{Options\\}
-
-Type: Dynamic, Manual
-
-Initial State: Main Menu
-
-Input: LEFT\_CLICK on OPTIONS option in the main menu
-
-Output: The options menu is brought up
-
-Tester(s): Development Team and Colleagues
-
-Description: The tester checks to see if they can view the options menu
-
 \end{enumerate}
 
 \subsubsection{Object Collision Testing}
@@ -387,7 +369,7 @@ Tester(s): Development Team and Colleagues
 Description: The tester checks if floor platforms are working as expected
 
 
-\item{Collision with Flag\\}
+\item{Collision with Castle\\}
 
 Type: Dynamic, Manual
 
@@ -460,98 +442,6 @@ Tester(s): Development Team and Colleagues
 
 Description: The tester checks if they can defeat the Goomba
 
-
-\item{Collision with Koopas (front facing collision)\\}
-
-Type: Dynamic, Manual
-
-Initial State: Character is moving toward a Koopa
-
-Input/Condition: Character hits a Koopa body front first
-
-Output: Character loses a life
-
-Tester(s): Development Team and Colleagues
-
-Description: The tester checks if Koopas can defeat the character
-
-
-\item{Collision with Koopas (foot first collision)\\}
-
-Type: Dynamic, Manual
-
-Initial State: Character is moving toward a Koopa
-
-Input/Condition: Character hits a Koopa body foot first
-
-Output: Koopa transforms to shell form
-
-Tester(s): Development Team and Colleagues
-
-Description: The tester checks if they can defeat the Koopa
-
-
-\item{Collision with Koopa Shell (front facing collision)\\}
-
-Type: Dynamic, Manual
-
-Initial State: Character is moving toward a Koopa Shell
-
-Input/Condition: Character hits a Koopa shell front first
-
-Output: Character loses a life
-
-Tester(s): Development Team and Colleagues
-
-Description: The tester checks if Koopa Shells can defeat the character
-
-
-\item{Collision with Koopa Shell (foot first collision)\\}
-
-Type: Dynamic, Manual
-
-Initial State: Character is moving toward a Koopa Shell
-
-Input/Condition: Character hits a Koopa shell foot first
-
-Output: Koopa shell is defeated
-
-Tester(s): Development Team and Colleagues
-
-Description: The tester checks if they can defeat the Koopa Shell
-
-
-
-\item{Collision with Bullet Bill (front facing collision)\\}
-
-Type: Dynamic, Manual
-
-Initial State: Character is moving toward Bullet Bill
-
-Input/Condition: Character hits a Bullet Bill body front first
-
-Output: Character loses a life
-
-Tester(s): Development Team and Colleagues
-
-Description: The tester checks if Bullet Bill can defeat the character
-
-
-
-\item{Collision with Bullet Bill (foot first collision)\\}
-
-Type: Dynamic, Manual
-
-Initial State: Character is moving toward Bullet Bill
-
-Input/Condition: Character hits a Bullet Bill body foot first
-
-Output: Bullet Bill is defeated
-
-Tester(s): Development Team and Colleagues
-
-Description: The tester checks if they can defeat a Bullet Bill
-
 \end{enumerate}
 
 \subsection{Tests for Nonfunctional Requirements}
@@ -569,9 +459,9 @@ Initial State: In-game state
 
 Tester(s): Development Team, Colleagues and/or testing group
 
-Description: The tester will see if the different environments are correct and meet the specifications
+Description: The tester will see if the different level environments are consistent and are also similar to the original game.
 					
-\item{Game Hude/Interface\\}
+\item{Game Hud/Interface\\}
 
 Type: Dynamic, Manual
 
@@ -579,7 +469,7 @@ Initial State: In-game state
 
 Tester(s): Development Team, Colleagues, and/or testing group
 
-Description: The tester will make sure that the score, time, lives, and amount of coins is not obstructive in the game?s view.
+Description: The tester will make sure that the score, time, lives, and amount of coins is not obstructive in the game's view.
 
 \end{enumerate}
 
@@ -595,7 +485,7 @@ Initial State: In-game state
 
 Tester(s): Development Team, Colleagues, and/or testing group
 
-Description: The tester will play through the game and will inform the development team of clarifications
+Description: The tester will play through the game and will inform the development team of clarifications. Furthermore, beta tester and survey feedback will quantify the game difficulty.
 
 \item{Entertainment\\}
 
@@ -605,7 +495,7 @@ Initial State: In-game state
 
 Tester(s): Development Team, Colleagues, and/or testing group
 
-Description: The tester will make sure that the game is entertaining and follows similar principles to that of the original game
+Description: The tester will make sure that the game is entertaining and follows similar principles to that of the original game.
 
 \end{enumerate}
 
@@ -646,6 +536,7 @@ Description: The tester will make sure that the game is able to run on Windows, 
 \begin{enumerate}
 
 \item{Altering Information\\}
+
 Type: Dynamic, Manual
 
 Initial State: In-game state
@@ -672,13 +563,14 @@ Tester(s): Development Team, Colleagues, and/or testing group
 Description: The tester will make sure that the game has no spelling/grammar errors and that messages, menus, and overall interface is written in English.
 
 \item{Offensive Content\\}
+
 Type: Dynamic, Manual
 
 Initial State: In-game state
 
 Tester(s): Development Team, Colleagues, and/or testing group
 
-Description: The tester will make sure that the game has no offensive content towards culture (religion, politics, ethnics, race, etc?).
+Description: The tester will make sure that the game has no offensive content towards culture (religion, politics, ethnics, race, etc...).
 
 \end{enumerate}
 
@@ -706,7 +598,7 @@ Type: Dynamic, Manual
 
 Initial State: In-game state
 
-Tester(s) ? Development Team, Colleagues, and/or testing group
+Tester(s): Development Team, Colleagues, and/or testing group
 
 Description: The tester will make sure that the game does not trigger epileptic seizures as a result from playing.
 
@@ -736,10 +628,8 @@ The player will interact with the different objects in the following ways:
 \end{itemize}
 
 
-\paragraph{Proof of Concept Test}
-
-Many of the tests that are demonstrated in the proof of concept will be stated in the System Tests section of this document.
-\textcolor{red}{Not really a test, try referencing above tests - CM} \\
+\paragraph{Proof of Concept Demonstration}
+Many of the things that are demonstrated in the proof of concept will be stated in the System Tests section of this document. These tests include. Player Movement, Portal Collision, and Ground and Wall Collision.
 \begin{enumerate}
 
 \item{Proof of Concept}
@@ -753,11 +643,11 @@ Description: Tests whether significant risks to the completion of the project ca
 \end{enumerate}
 	
 \section{Comparison to Existing Implementation}	
-\textcolor{red}{If your system cannot save, does it fail? Be specific and identify scope - CM} \\
-	Since the functional and non-function requirements that Mari0 must meet are derived from the original implementation, all system tests that tests whether or not these requirements are met will be the metric used to determine the likeness of our reimplementation to the original product.
+	Since the functional and non-function requirements that Mari0 must meet are derived from the original implementation, all system tests that test whether or not these requirements are met will be the metric used to determine the likeness of our reimplementation to the original product.
+	We will make sure that we test our product in parallel with the current product that is available. We will ensure that our game meets the same requirements as the original. These tests will include a lot of the non-functional requirements such as Look and Feel, and Performance Requirements. Many of the different functional requirements will also be tested alongside with the original product to ensure accuracy. These requirements will be movement, portal colllision, wall and ground collision, enemy collision, and player physics.  
 \section{Unit Testing Plan}
-	The NUnit framework will be used to conduct all unit tests of Mari0. We will conduct our testing in a manner that satisfies a complete condition coverage criteria.
-	\textcolor{red}{How can you ensure code coverage? - CM} \\
+	The NUnit framework will be used to conduct all unit tests of Mari0. We will conduct our testing in a manner that satisfies a complete condition coverage criteria. We will ensure code coverage by making sure that all code is being ran effectively and consistently. Furthermore, having the original product for parallel testing will allow us to see what parts of the code are missing and what needs to be implemented further.
+
 \subsection{Unit testing of internal functions}
 	Internal functions and methods that return any value type, such as integer, float, boolean, etc. can and will be tested dynamically, with player inputs or input conditions being given and comparing the actual output to the expected output. Due to the development and testing schedule, the use of drivers is not needed, and the use of stubs will be very limited if they are used at all. Since any video game is inherently dependant on player actions and how their interactions affect the game, we will be testing for complete condition coverage.
 \subsection{Unit testing of output files}		
@@ -779,7 +669,7 @@ Their values are defined in this section for easy maintenance.
 
 \subsection{Usability Survey Questions}
 
-Since many functionalities of Mari0 are difficult to test, either due to testing having to be done manually or a bias by the development team during testing, the following usability suvey questions have been listed to test some of these difficult functionalities
+Since many functionalities of Mari0 are difficult to test, either due to testing having to be done manually or a bias by the development team during testing, the following usability survey questions have been listed to test some of these difficult functionalities
 
 \begin{itemize}
   \item Are the portal mechanics intuitive and easy to understand?
@@ -789,5 +679,7 @@ Since many functionalities of Mari0 are difficult to test, either due to testing
   \item Do you think the game is fair?
   \item Do you think the game is fun?
 \end{itemize}
+
+Each question above will have a score associated with it that beta testers will be able to fill out and reflect on the product. The score will be from 1 - 10, 1 being negative and poor, and 10 being positive and well done. We are looking for a score of about 8 or higher on average to ensure that we have created an excellent product. 
 
 \end{document}

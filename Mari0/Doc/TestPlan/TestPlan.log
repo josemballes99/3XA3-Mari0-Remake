@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 NOV 2016 18:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 DEC 2016 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -281,12 +281,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout5 = `TestPlan.lot'.
 
 
-(./TestPlan.lof)
-\tf@lof=\write6
-\openout6 = `TestPlan.lof'.
+Underfull \hbox (badness 1424) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 Tests for Proof of Con-cept. Added
+ []
 
- [2]
-Overfull \hbox (95.89662pt too wide) in paragraph at lines 80--102
+[2]
+Overfull \hbox (63.45392pt too wide) in paragraph at lines 80--96
 [][] 
  []
 
@@ -294,255 +294,221 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.110 \subsection
-                 {Test Team} [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+l.100 \section
+              {Plan} [1] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
 
-Overfull \hbox (26.62901pt too wide) in paragraph at lines 268--269
+Overfull \hbox (26.62901pt too wide) in paragraph at lines 264--265
 []\OT1/cmr/m/n/12 Description: The tester must make sure that no con-tin-u-ous 
 anti-gravitational
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--451
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 479--480
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 494--495
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 509--510
+Underfull \hbox (badness 10000) in paragraph at lines 490--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 541--542
+Underfull \hbox (badness 10000) in paragraph at lines 538--539
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--565
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 574--575
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 590--591
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 600--601
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 632--633
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 664--665
-
- []
-
-
-Overfull \hbox (32.17757pt too wide) in paragraph at lines 672--673
+Overfull \hbox (32.17757pt too wide) in paragraph at lines 563--564
 []\OT1/cmr/m/n/12 Description: The tester will make sure that the game has no s
 pelling/grammar
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 689--690
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
 
  []
 
-[15]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 725.
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
+
+ []
+
+[13]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 617.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 725.
-
-Underfull \hbox (badness 10000) in paragraph at lines 741--743
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 759--761
-
- []
-
-[17]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 617.
+ [14]
+[15]
 No file TestPlan.bbl.
-[18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 793.
- [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 793.
+[16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 685.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 685.
  (./TestPlan.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 793.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 793.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 685.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 685.
 Package rerunfilecheck Info: File `TestPlan.out' has not changed.
-(rerunfilecheck)             Checksum: 8664031CC2DBB378228940AD084042FD;2375.
+(rerunfilecheck)             Checksum: 46FD76B4406B20EC6FF3057B93EC98D9;2448.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 793.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 685.
  ) 
 Here is how much of TeX's memory you used:
- 5462 strings out of 493014
- 79539 string characters out of 6133351
+ 5450 strings out of 493014
+ 79460 string characters out of 6133351
  167315 words of memory out of 5000000
  8882 multiletter control sequences out of 15000+600000
  8808 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,10n,28p,560b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,10n,28p,560b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on TestPlan.pdf (22 pages, 87457 bytes).
+Output written on TestPlan.pdf (20 pages, 87269 bytes).
 PDF statistics:
- 359 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 346 PDF objects out of 1000 (max. 8388607)
+ 316 compressed objects within 4 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
