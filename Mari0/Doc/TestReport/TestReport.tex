@@ -168,13 +168,23 @@ The following tests were executed by each member of our development team and a c
 
 \item{Epileptic Prevention\\}
 
-\textbf{Results: }The testers indicated that they believe that the game would not trigger any epileptic seizures, although it is worth noting that non of the testers has ever had a history of epileptic seizures.
+\textbf{Results: }The testers indicated that they believe that the game would not trigger any epileptic seizures, although it is worth noting that none of the testers has ever had a history of epileptic seizures.
 
 \end{enumerate}
 	
 \section{Comparison to Existing Implementation}	
 
-This section will not be appropriate for every project.
+Since the functional and nonfunctional requirements that Mari0 must meet
+are derived from the original implementation, all system tests that test
+whether or not these requirements are met will be the metric used to de-
+termine the likeness of our reimplementation to the original product. We made
+ sure that we tested and compared our product to the current product
+that is available. Our tests ensure that our game meets the same requirements
+as the original. Our tests and surveys included a lot of the nonfunctional requirements 
+such as Look and Feel, and Performance Requirements. Many of the
+different functional requirements were tested alongside with the original 
+product to ensure accuracy. These requirements will be movement, portal
+colllision, wall and ground collision, enemy collision, and player physics.
 
 \section{Unit Testing}
 
@@ -471,7 +481,7 @@ After the testing was complete no urgent fixes that interfered with the requirem
 No automated testing methods were used for the testing of this product.
 		
 \section{Trace to Requirements}
-\begin{table}[!htbp]
+\begin{table}[H]
 \begin{tabular}{ll}
 \toprule
 Tests & Requirements \\
@@ -504,8 +514,39 @@ TH & R7\\
 \label{Table}
 \end{table}
 	
-
-\section{Trace to Modules}		
+\section{Trace to Modules}
+\begin{table}[H]
+\begin{tabular}{ll}
+\toprule
+Tests & Modules \\
+\midrule
+TPG & M1, M2, M4, M10 \\
+THB & M1, M2, M4, M10 \\
+TGP & M3, M10 \\
+TST & M4, M7, M10 \\
+TCCIS & M4, M7, M8, M9, M10, M11 \\
+TKEIS & M4, M7, M9, M10, M11 \\
+TKE & M7, M8, M9, M11 \\
+TDE &  M7, M8, M11 \\
+TDF & M8, M11 \\
+TFBVH & M2, M5, M6, M11 \\
+TFBVV & M2, M5, M6, M11 \\
+TFBNH & M2, M5, M6, M11 \\
+TFBNV & M2, M5, M6, M11 \\
+TFOVH & M2, M5, M6, M11 \\
+TFOVV & M2, M5, M6, M11 \\
+TFONH & M2, M5, M6, M11 \\
+TFONV & M2, M5, M6, M11 \\
+TMLS & M3, M8, M9, M11 \\
+TMRS & M3, M8, M9, M11 \\
+TMLNS & M3, M8, M9, M11 \\
+TMRNS & M3, M8, M9, M11 \\
+TH & M3, M8, M9, M11\\
+\midrule
+\end{tabular}
+\caption{Trace between Tests to Modules}
+\label{Table}
+\end{table}	
 
 \section{Code Coverage Metrics}
 No accurate code coverage metrics were achieved with our current test suit since it was all a result of manual and survey testing from other people. 
