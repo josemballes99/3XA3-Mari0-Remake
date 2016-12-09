@@ -8,26 +8,64 @@ public class Portal : MonoBehaviour
     public Rigidbody2D playerRB;
 
     // Checks current status of portal orientation
+
+	/**
+	 * A bool type
+	 */ 
     public bool portalOpenLeft;
+
+	/**
+	 * A bool type
+	 */ 
     public bool portalOpenRight;
+
+	/**
+	 * A bool type
+	 */ 
     public bool portalOpenUp;
+
+	/**
+	 * A bool type
+	 */ 
     public bool portalOpenDown;
 
+	/**
+	 * A Transform type
+	 */ 
     public Transform thisPortal;
+
+	/**
+	 * A Transform type
+	 */ 
     public Transform othrPortal;
 
+	/**
+	 * A bool type
+	 */ 
     public bool isInPortal;
 
+	/**
+	 * A method that is triggerd when there is a collision with the portal
+	 * @param other is the collider area
+	 */ 
     void OnTriggerEnter2D(Collider2D other)
     {
         isInPortal = true;
     }
 
+	/**
+	 * A method that is triggerd when there is a collision with the portal
+	 * @param other is the collider area
+	 */ 
     void OnTriggerExit2D(Collider2D other)
     {
         isInPortal = false;
     }
 
+	/**
+	 * A method that teleports the character the the correct area when using the portals
+	 * @param other is the portal
+	 */ 
     public void teleport(Portal other)
     {
         if (this.isInPortal == true)
