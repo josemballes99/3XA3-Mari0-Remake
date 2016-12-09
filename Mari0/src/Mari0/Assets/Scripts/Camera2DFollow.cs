@@ -5,18 +5,50 @@ namespace UnityStandardAssets._2D
 {
     public class Camera2DFollow : MonoBehaviour
     {
+		/**
+	 	* A transform type
+		*/ 
         public Transform target;
+		/**
+	 	* A float type
+		*/ 
         public float damping = 1;
+		/**
+	 	* A float type
+		*/ 
         public float lookAheadFactor = 3;
+		/**
+	 	* A float type
+		*/ 
         public float lookAheadReturnSpeed = 0.5f;
+		/**
+	 	* A float type
+		*/ 
         public float lookAheadMoveThreshold = 0.1f;
 
+		/**
+	 	* A float type
+		*/ 
         private float m_OffsetZ;
+
+		/**
+	 	* A Vector3 type
+		*/ 
         private Vector3 m_LastTargetPosition;
+
+		/**
+	 	* A Vector3 type
+		*/ 
         private Vector3 m_CurrentVelocity;
+
+		/**
+	 	* A Vector3 type
+		*/ 
         private Vector3 m_LookAheadPos;
 
-        // Use this for initialization
+		/**
+	 	* A method that starts the set up for the camera
+		*/ 
         private void Start()
         {
             m_LastTargetPosition = target.position;
@@ -25,7 +57,9 @@ namespace UnityStandardAssets._2D
         }
 
 
-        // Update is called once per frame
+		/**
+	 	* A method that updates once perframe and accelerates the camera to follow the player
+		*/ 
         private void Update()
         {
             // only update lookahead pos if accelerating or changed direction
