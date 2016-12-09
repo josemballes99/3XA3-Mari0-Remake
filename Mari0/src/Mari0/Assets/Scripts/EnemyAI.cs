@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿/*! 
+ *  \brief     Enemy AI script
+ *  \details   This script is control the AI and check if enemy or mario dies on collision
+ *  \author    Ninetendo
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class EnemyAI : MonoBehaviour {

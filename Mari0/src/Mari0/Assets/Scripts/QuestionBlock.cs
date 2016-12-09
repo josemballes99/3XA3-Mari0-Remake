@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*! 
+ *  \brief     Question Block script
+ *  \details   This script has the properties of the question blocks
+ *  \author    Ninetendo
+ */
+
+
+using UnityEngine;
 using System.Collections;
 
 public class QuestionBlock : MonoBehaviour {

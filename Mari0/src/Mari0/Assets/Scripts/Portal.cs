@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿/*! 
+ *  \brief     Portal class
+ *  \details   This class contains the information of portal orientation and collision detection
+ *  \author    Ninetendo
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class Portal : MonoBehaviour

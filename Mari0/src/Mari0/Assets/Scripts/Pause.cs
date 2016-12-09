@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿/*! 
+ *  \brief     Pause script
+ *  \details   This script is used to pause the game
+ *  \author    Ninetendo
+ */
+
+using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 

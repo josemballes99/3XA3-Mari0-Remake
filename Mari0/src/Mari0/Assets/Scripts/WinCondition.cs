@@ -1,3 +1,9 @@
+/*! 
+ *  \brief     Win condition script
+ *  \details   This script checks if Mario has won the game
+ *  \author    Ninetendo
+ */
+
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;

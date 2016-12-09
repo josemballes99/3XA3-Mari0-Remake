@@ -1,3 +1,9 @@
+/*! 
+ *  \brief     Platformer Character Class
+ *  \details   This class is used to control the platform mechanics of the character
+ *  \author    Unity Technologies modified by Ninetendo
+ */
+
 using System;
 using UnityEngine;
 using UnityEngine.UI;

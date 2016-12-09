@@ -1,3 +1,9 @@
+/*! 
+ *  \brief     Camera Follow script
+ *  \details   This script is used to get the camera to follow the player
+ *  \author    Unity Technologies modified by Ninetendo
+ */
+
 using System;
 using UnityEngine;
 

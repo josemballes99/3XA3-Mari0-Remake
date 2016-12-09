@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*! 
+ *  \brief     Main Menu script
+ *  \details   This script is the buttons for the Main Menu screen
+ *  \author    Ninetendo
+ */
+
+
+using UnityEngine;
 using System.Collections;
 
 public class MainMenu : MonoBehaviour {

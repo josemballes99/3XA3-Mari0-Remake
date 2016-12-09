@@ -1,3 +1,9 @@
+/*! 
+ *  \brief     User Controller class
+ *  \details   This class is used to control the character
+ *  \author    Unity Technologies
+ */
+
 using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
