@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Mari0 Gantt Project" company="McMaster 3XA3 Ninetendo" webLink="" view-date="2016-10-02" view-index="0" gantt-divider-location="354" resource-divider-location="300" version="2.8.1" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Mari0 Gantt Project" company="McMaster 3XA3 Ninetendo" webLink="" view-date="2016-10-09" view-index="0" gantt-divider-location="354" resource-divider-location="300" version="2.8.1" locale="en_CA">
     <description/>
-    <view zooming-state="default:6" id="gantt-chart">
+    <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Name" width="199" order="0"/>
         <field id="tpd4" name="Begin date" width="75" order="1"/>
         <field id="tpd5" name="End date" width="74" order="2"/>
@@ -108,7 +108,15 @@
         </task>
         <task id="62" name="Add Music and Sound Effects" color="#ffcccc" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2016-11-28" duration="3" complete="0" priority="3" expand="true"/>
         <task id="64" name="Add Menus and Options" color="#ff9999" shape="1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0" meeting="false" start="2016-11-13" duration="5" complete="0" expand="true"/>
-        <task id="72" name="Execute Test plan" color="#ff9999" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2016-12-03" duration="3" complete="0" priority="2" expand="true"/>
+        <task id="72" name="Testing Non Funtional Requirements" color="#ff9999" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2016-11-27" duration="3" complete="0" priority="2" expand="true">
+            <depend id="33" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="76" name="Input Testing" color="#ff6666" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2016-11-21" duration="2" complete="0" expand="true">
+            <depend id="77" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="77" name="Collision Testing" color="#ff9999" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2016-11-24" duration="3" complete="0" expand="true">
+            <depend id="72" type="2" difference="0" hardness="Rubber"/>
+        </task>
         <task id="34" name="Final Documentation (Revision 1) Due" color="#8cb6ce" shape="1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0" meeting="false" start="2016-12-08" duration="1" complete="0" priority="4" expand="true"/>
         <task id="75" name="Test Report Documentation" color="#ff9999" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2016-12-03" duration="5" complete="0" priority="2" expand="true"/>
         <task id="54" name="Final Documentation Revision" color="#990000" shape="0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0" meeting="false" start="2016-11-29" duration="9" complete="0" priority="4" expand="true">
@@ -138,6 +146,7 @@
         <allocation task-id="64" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="72" resource-id="0" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
         <allocation task-id="75" resource-id="0" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
+        <allocation task-id="76" resource-id="0" function="SoftwareDevelopment:5" responsible="true" load="100.0"/>
         <allocation task-id="0" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="5" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="3" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
@@ -147,6 +156,7 @@
         <allocation task-id="45" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="54" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="72" resource-id="1" function="SoftwareDevelopment:4" responsible="true" load="100.0"/>
+        <allocation task-id="77" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="0" resource-id="2" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
         <allocation task-id="13" resource-id="2" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
         <allocation task-id="16" resource-id="2" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
@@ -159,6 +169,7 @@
         <allocation task-id="3" resource-id="2" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
         <allocation task-id="72" resource-id="2" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
         <allocation task-id="75" resource-id="2" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="76" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
     </allocations>
     <vacations>
         <vacation start="2016-11-11" end="2016-11-14" resourceid="0"/>

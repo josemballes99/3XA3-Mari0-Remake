@@ -1,0 +1,22 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Anticipated and Unlikely Changes}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Anticipated Changes}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Unlikely Changes}{2}{subsection.2.2}
+\contentsline {section}{\numberline {3}Module Hierarchy}{3}{section.3}
+\contentsline {section}{\numberline {4}Connection Between Requirements and Design}{3}{section.4}
+\contentsline {section}{\numberline {5}Module Decomposition}{4}{section.5}
+\contentsline {subsection}{\numberline {5.1}Hardware Hiding Modules (M\ref {mHH})}{4}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Mouse Inputs (M\ref {mMI})}{4}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Keyboard Inputs (M\ref {mKI})}{5}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Behaviour-Hiding Module}{5}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Input Format Module (M\ref {mInput})}{5}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Portal Physics Module (M\ref {mPP})}{5}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Portal Gun Module (M\ref {mPG})}{5}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Game Object Module (M\ref {mGO})}{5}{subsubsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.5}Player Object Module (M\ref {mPO})}{6}{subsubsection.5.2.5}
+\contentsline {subsection}{\numberline {5.3}Software Decision Module}{6}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Sprite/Model Module (M\ref {mSM})}{6}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Interface Module (M\ref {mInterface})}{6}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Collision Detection Module (M\ref {mCD})}{6}{subsubsection.5.3.3}
+\contentsline {section}{\numberline {6}Traceability Matrix}{6}{section.6}
+\contentsline {section}{\numberline {7}Use Hierarchy Between Modules}{7}{section.7}
